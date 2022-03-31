@@ -6,12 +6,12 @@
 
 }
 body {
-    font: 1em Arial, sans-serif;
+    font: 1em Arial, Helvetica, sans-serif;
     background-image: url('../image/abstractPic.jpg');
     background-size: cover;
 }
 h1 {
-    font: 2em "Roboto", sans-serif;
+    font: 2em "Roboto", Arial, Helvetica, sans-serif;
 }
 h3 {
     font-size: 1.5em;
