@@ -1,0 +1,55 @@
+/*Brandon Swan - April 1st, 2022*/
+@font-face {
+	font-family: 'Quicksand';
+    src: url('../fonts/quicksand-regular-webfont.woff2') format('woff'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+body {
+	background-color: #b8d1eb;
+	color: #000;
+	font-family: 'Times New Roman', Times, serif;
+}
+main {
+	background-color: #c5a98b;
+	padding: 10px;
+}
+nav ul {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: 'Righteous', Arial, Helvetica, sans-serif;
+	font-size: 3em;
+}
+h2 {
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+}
+main ul {
+	list-style-image: url(../images/tomato.png);
+}
+main, footer { 
+clear: both;
+}
+footer {
+	font-size: .75em;
+	text-align: center;
+	background-color: #F0EAD6;
+	padding: 10px 0 10px 0;
+}
