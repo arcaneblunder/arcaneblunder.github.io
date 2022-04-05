@@ -1,0 +1,81 @@
+/* Style sheet created by: Brandon Swan - April 6th, 2022 */
+
+/* Style for body specifies a background color */
+body {
+	background-color: #FFFFFF;
+}
+main {
+	display: block;
+	padding: 1em;
+	background-color: #4e9657;
+}
+section {
+	background-color: white;
+	color: #4e9657;
+	padding: 15px;
+	margin-top: 15px;
+}
+article {
+	color: black;
+	border-top: 3px solid gray;
+	padding: 15px;
+	margin-top: 15px;
+}
+aside {
+	border-radius: 10px;
+	background-color: #4e9657;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	padding: 15px;
+	margin-top: 15px;
+}
+footer {
+	text-align: center;
+	font-size: .70em;
+}
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header element */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #4E9657;
+	padding: 0.5%;
+	margin-left: 1%;
+	font-size: 3em;
+}
+
+/* Style for the nav element */
+nav {
+	padding: 0.5%;
+}
+
+/* Style for the nav list item elements */
+nav li {
+	display: inline;
+}
+
+/* Style for the nav links element */
+nav li a {
+	color: #4E9657;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration: none;
+}
+h3 {
+	text-align: center;
+}
+/* Style for the table */
+table{
+  width: 100%;
+}
+td, th {
+	border: 1px solid black;
+}
+
