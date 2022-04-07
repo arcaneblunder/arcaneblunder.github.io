@@ -50,6 +50,8 @@ body {
  .tableStyle tbody tr:nth-child(odd)
  {
 	 background-color: rgb(183, 103, 132);
+	 color: #fff;
+	 text-shadow: 1px 1px 0 rgba(0, 0, 0, .7);
  }
  
  
