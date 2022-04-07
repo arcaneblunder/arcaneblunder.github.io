@@ -117,6 +117,7 @@ h2 {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-0-background-clip: text;
+	transform: rotate(20deg);
 }
 #hero-box h1::after {
 	display: block;
