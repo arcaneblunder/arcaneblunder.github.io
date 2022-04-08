@@ -1,0 +1,55 @@
+/*Brandon Swan - April 8th, 2022*/
+@font-face {
+    font-family: 'Roboto Bold Italic';
+    src: url('roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: 600;
+}
+html {
+	background: url(../images/jewelry.jpg) no-repeat top /cover;
+}
+
+#outerwrapper {	
+	border-radius: 15%;
+	width: 70%;
+	margin: 0 auto;
+	background: rgba(243,205,170, 0.4);
+}
+nav ul {
+	list-style-type: none;
+	font-size: 1.5em;
+}
+nav {
+	clear: both;
+}
+main {
+	background-image: linear-gradient(#fff, #f0f9e6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-family: 'Pacifico', Arial, Helvetica, cursive;
+	font-size: 4em;
+}
+h2 {
+	font-family: 'Roboto Bold Italic', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-style: italic;
+}
+.float-left {
+	float: left;
+}
+.rounded {
+	border-radius: 20em;
+}
+.addrightmargin {
+	margin-right: 10%;
+}
+footer {
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+}
