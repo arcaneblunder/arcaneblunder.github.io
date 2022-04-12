@@ -182,6 +182,10 @@ section {
 #footer a {
 	color: #fff;
 }
+#footer a:hover {
+        text-decoration: underline;
+	color: #f07529;
+}
 #footer .container {
 	display: flex;
 }
