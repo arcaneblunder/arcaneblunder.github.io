@@ -412,43 +412,43 @@ input[type="submit"]:hover {
 }
 .html {
 	width: 90%;
-	animation: html 3s infinite;
+	animation: html 3s;
 }
 .css {
 	width: 80%;
-	animation: css 3s infinite;
+	animation: css 3s;
 }
 .php {
 	width: 60%;
-	animation: php 3s infinite;
+	animation: php 3s;
 }
 .csharp {
 	width: 50%;
-	animation: csharp 3s infinite;
+	animation: csharp 3s;
 }
 .javascript {
 	width: 40%;
-	animation: javascript 3s infinite;
+	animation: javascript 3s;
 }
 .jquery {
 	width: 30%;
-	animation: jquery 3s infinite;
+	animation: jquery 3s;
 }
 .java {
 	width: 40%;
-	animation: java 3s infinite;
+	animation: java 3s;
 }
 .unity {
 	width: 40%;
-	animation: java 3s infinite;
+	animation: java 3s;
 }
 .photoshop {
 	width: 40%;
-	animation: java 3s infinite;
+	animation: java 3s;
 }
 .python {
 	width: 20%;
-	animation: python 3s infinite;
+	animation: python 3s;
 }
 @keyframes html {
 	0%{
