@@ -60,10 +60,6 @@ body strong {
 	color: #000;
 	font-size: 1em;
 	text-decoration: none;
-	-webkit-transition: background-color .35s ease;
-	-moz-transition: background-color .35s ease;
-	-o-transition: background-color .35s ease;
-	transition: background-color .35s ease;
 	border-bottom: 2px solid transparent;
 }
 #nav-main a.current {
@@ -142,10 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 24px;
 	margin: 24px auto;
 	font-size: 1.55em;
-	-webkit-transition: all .35s ease;
-	-moz-transition: all .35s ease;
-	-o-transition: all .35s ease;
-	transition: all .35s ease;
     background: linear-gradient(to right, #f07529 50%, #fff 50%);
     background-size: 200% 100%;
     background-position:left bottom;
@@ -230,7 +222,6 @@ figcaption {
 .udemy li a {
 	display: block;
 	color: #f07529;
-	transition: color .3s ease;
 }
 .udemy li a:hover {
 	color: #161318;
@@ -253,7 +244,6 @@ figcaption {
 	width: calc(100% - 22px);
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: 6px;
-	transition: all .3s ease;
 }
 textarea {
 	width: 100%;
@@ -301,10 +291,6 @@ input[type="submit"] {
 	border-radius: 6px;
 	text-transform: uppercase;
 	border: 1px solid #fff;
-	-webkit-transition: all .35s ease;
-	-moz-transition: all .35s ease;
-	-o-transition: all .35s ease;
-	transition: all .35s ease;
     background: linear-gradient(to right, #e88816 50%, #24222D 50%);
     background-size: 200% 100%;
 	letter-spacing: .1em;
@@ -412,185 +398,31 @@ input[type="submit"]:hover {
 }
 .html {
 	width: 90%;
-	animation: html 3s;
 }
 .css {
 	width: 80%;
-	animation: css 3s;
 }
 .php {
 	width: 60%;
-	animation: php 3s;
 }
 .csharp {
 	width: 50%;
-	animation: csharp 3s;
 }
 .javascript {
 	width: 40%;
-	animation: javascript 3s;
 }
 .jquery {
 	width: 30%;
-	animation: jquery 3s;
 }
 .java {
 	width: 40%;
-	animation: java 3s;
 }
 .unity {
 	width: 40%;
-	animation: java 3s;
 }
 .photoshop {
 	width: 40%;
-	animation: java 3s;
 }
 .python {
 	width: 20%;
-	animation: python 3s;
-}
-@keyframes html {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 90%;
-	}
-}
-@-webkit-keyframes html {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 90%;
-	}
-}
-@keyframes css {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 80%;
-	}
-}
-@-webkit-keyframes css {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 80%;
-	}
-}
-@keyframes php {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 60%;
-	}
-}
-@-webkit-keyframes php {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 60%;
-	}
-}
-@keyframes csharp {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 50%;
-	}
-}
-@-webkit-keyframes csharp {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 50%;
-	}
-}
-@keyframes javascript {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 40%;
-	}
-}
-@-webkit-keyframes javascript {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 40%;
-	}
-}
-@keyframes jquery {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 30%;
-	}
-}
-@-webkit-keyframes jquery {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 30%;
-	}
-}
-@keyframes java {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 40%;
-	}
-}
-@-webkit-keyframes java {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 40%;
-	}
-}
-@keyframes unity {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 40%;
-	}
-}
-@-webkit-keyframes unity {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 40%;
-	}
-}
-@keyframes python {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 20%;
-	}
-}
-@-webkit-keyframes python {
-	0%{
-		width: 0%;
-	}
-	100% {
-		width: 20%;
-	}
 }
