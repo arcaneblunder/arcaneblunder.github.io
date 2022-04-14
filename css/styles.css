@@ -303,41 +303,6 @@ input[type="submit"]:hover {
 	color: #fff;
 	cursor: pointer;
 }
-
-/* Tables */
-#college {
-	border-collapse: collapse;
-	padding: 12px;
-	border: 1px solid #000;
-}
-#college thead {
-	background-color: #201e20;
-	color: #fff;
-}
-#college thead tr th {
-	padding: 5px 30px 5px 10px;
-}
-#college td {
-	padding: 5px 30px 5px 10px;
-	border-top: 1px solid rgba(0,0,0,.5);
-}
-#college tbody {
-        font-size: .9em;
-}
-#college tbody tr:nth-child(even) {
-	background-color: #fff;
-}
-#college tbody tr:nth-child(even) {
-	background-color: #d0d0d0;
-}
-#college tfoot {
-	text-align: right;
-	background-color: #201e20;
-	color: #fff;
-}
-#college tfoot td {
-	padding: 12px 10px;
-}
 /* Work Experience */
 .work-container {
 	display: flex;
