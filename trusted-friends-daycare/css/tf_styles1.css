@@ -190,7 +190,7 @@ Desktop Styles: 769px and greater
 	ul.submenu {
 		background: transparent;
 		box-shadow: none;
-		display: block;
+		display: none;
 		position: relative;
 		width: 100%;
 	}
@@ -200,7 +200,7 @@ Desktop Styles: 769px and greater
 		display: table;
 	}
       nav.horizontal a.submenuTitle {
-              display: none;
+              display: block;
    }
 	article {
 		float: left;
