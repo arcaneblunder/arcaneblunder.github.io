@@ -190,6 +190,7 @@ Desktop Styles: 769px and greater
 	ul.submenu {
 		background: transparent;
 		box-shadow: none;
+		display: block;
 		position: relative;
 		width: 100%;
 	}
