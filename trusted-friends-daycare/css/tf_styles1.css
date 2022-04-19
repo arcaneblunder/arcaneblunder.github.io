@@ -199,9 +199,9 @@ Desktop Styles: 769px and greater
 		content: "";
 		display: table;
 	}
-	nav.horizontal a.submenuTitle {
-		display: block;
-	}
+      nav.horizontal a.submenuTitle {
+              display: none;
+   }
 	article {
 		float: left;
 		margin-right: 5%;
