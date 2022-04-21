@@ -96,8 +96,8 @@ Tablet Breakpoint - 641px
 
 @media screen and (min-width: 641px) {
 
-	nav ul {
-		display: line;
+	nav ul li {
+		display: inline;
 	}
 	nav ul li {
 		margin-right: 15px;
