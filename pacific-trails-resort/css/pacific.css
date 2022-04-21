@@ -28,13 +28,13 @@ h2
 { 
 	display: none;
 	color: #3399CC; 
-    font-family: Georgia, 'Times New Roman', serif; 
+        font-family: Georgia, 'Times New Roman', serif; 
 }
 	 
 h3 
 { 
 	color: #000033;
-    font-family: Georgia, 'Times New Roman', serif; 
+        font-family: Georgia, 'Times New Roman', serif; 
 }
 
 /* Navigation */
@@ -42,7 +42,7 @@ h3
 nav
 { 
 	background-color: #90C7E3;
-    font-weight: bold;
+        font-weight: bold;
 }
 nav ul {
 	margin: 0;
@@ -56,7 +56,7 @@ nav ul {
 footer 
 { 
 	font-size: 75%;
-    font-weight: bold;
+        font-weight: bold;
 	text-align: center;
 	font-family: Georgia, 'Times New Roman', serif;
 	background: linear-gradient(white, #90C7E3);
@@ -97,7 +97,7 @@ Tablet Breakpoint - 641px
 @media screen and (min-width: 641px) {
 
 	nav ul {
-		display: flex;
+		display: line;
 	}
 	nav ul li {
 		margin-right: 15px;
