@@ -4,16 +4,20 @@ body {
 }
 
 html {
-	background-color: #000;
+	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../images/background-mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 body {
-  padding-top: 122px;
+  padding-top: 112px;
 }
 
 @media (max-width: 991px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 114px; /* Height of navbar */
+    top: 100px; /* Height of navbar */
     bottom: 0;
     width: 100%;
     padding-right: 1rem;
@@ -58,21 +62,19 @@ body {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
-  color: var(--secondary);
 }
 
 .nav-underline .nav-link:hover {
-  color: var(--blue);
+
 }
 
 .nav-underline .active {
   font-weight: 500;
-  color: var(--gray-dark);
+
 }
 
 .text-white-50 { color: rgba(255, 255, 255, .5); }
 
-.bg-purple { background-color: var(--purple); }
 
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
@@ -186,8 +188,8 @@ footer h3 {
 	color: #fff;
 }
 .dropdown-menu a:hover {
-	color: red;
-	background-color: #141414;
+	color: #fff;
+	background-color: #871918;
 }
 #carousel {
 	display: none;
@@ -207,6 +209,19 @@ footer h3 {
 	box-shadow: 0 0 12px 12px rgba(255, 0, 0, .6) inset;
 }
 
+
+/* Accordion */
+#accordion {
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+}
+#accordion .card {
+	background-color: #000;
+	border: 2px groove rgba(255, 0,0, .7);
+}
+#accordion button {
+	width: 100%;
+	text-decoration: underline;
+}
 @media screen and (min-width: 768px) {
 	.modal-dialog {
 		max-width: 620px;
