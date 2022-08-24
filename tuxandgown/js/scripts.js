@@ -1,4 +1,7 @@
-use strict
+const joinList = function {
+    "use strict";
+    
+}
 
 /*
     Student Name: Brandon Swan
