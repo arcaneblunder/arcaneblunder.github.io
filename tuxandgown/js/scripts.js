@@ -1,3 +1,5 @@
+use strict
+
 /*
     Student Name: Brandon Swan
     File Name: script.js
