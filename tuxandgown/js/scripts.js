@@ -1,5 +1,7 @@
+"use strict";
+
 const joinList = function {
-    "use strict";
+    
     
 }
 
