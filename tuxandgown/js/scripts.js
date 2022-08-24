@@ -1,11 +1,8 @@
 /*
     Student Name: Brandon Swan
     File Name: script.js
-    Date: April 25th, 2022
+    Date: ////
 */
 
-//jQuery for hero image to take up header space
+//javascript following along in class for practice.
 
-$(document).ready(function() {
-	$('.hero').height($(window).height());
-});
