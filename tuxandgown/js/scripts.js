@@ -1,10 +1,11 @@
 "use strict";
 
-
+window.alert("This is a test of the alert method");
 window.alert("This is a test of the alert method");
 const joinList = function {
     // objectName.methodName(parameters)
     // window.alert("This is a test of the alert method");
+    // 
 }
 
 /*
