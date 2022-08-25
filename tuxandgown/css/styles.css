@@ -1,36 +1,52 @@
-/*
-Team Members: Brandon Swan
-Date: April 28th, 2022
-File Name: styles.css
-*/
+/* Header Styles */
 
-.bg-red {
-    background-color: #780001;
+/* Mobile */
+
+
+/* Hero */
+
+.hero {
+	padding: 100px;
+	background-color: #333;
+	color: #fff;
 }
 
-.bg-light-blue {
-     background-color: #ccd5e6;   
+
+/* Main */
+
+
+
+.wedding-dresses > div, .tuxedos-suits > div {
+	background-image: linear-gradient(rgba(48, 34, 24, .1), rgba(0, 0, 0, .3));
+	padding: 50px 15px;
+}
+.wedding-dresses  {
+	background: url('../images/pexels-olya-kobruseva-5429206.jpg');
+	background-size: contain;
+
+}
+.tuxedos-suits {
+	text-align: right;
+	background: url('../images/pexels-david-guerrero-10123124.jpg');
+	background-size: contain;
+}
+.tuxedos-suits > div {
+
 }
 
-/* Show mobile class, hide tablet-desktop class and menu-links id */
-.mobile {
-    display: block;
+/* Footer */
+
+footer {
+	background-color: #302C21;
+	color: #fff;
+	font-size: .9rem;
+}
+#main-footer-bottom {
+	background: rgba(0, 0, 0, .2);
 }
 
-.tablet-desktop {
-    display: none;
-}
 
-/* Media Query for Tablet Viewport */
-@media (min-width: 768px) {  
+/* Tablet Styling */
 
-    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
-    .tablet-desktop {
-        display: block;
-    }
 
-    .mobile {
-        display: none;
-    }
-    
-}
+/* Desktop Styling */
