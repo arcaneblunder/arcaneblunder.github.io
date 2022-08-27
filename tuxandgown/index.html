@@ -33,13 +33,13 @@
 	<body onload="incompleteAlert()">
 		<header>
 			<!-- Primary navigation -->
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container">
-					<a class="navbar-brand" href="#"><img src="https://place-hold.it/80x40" alt="Tux and Gown Logo">Tux and Gown </a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+					<a class="navbar-brand" href="#"><img src="https://place-hold.it/40x40" alt="Tux and Gown Logo">Navbar</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse">
+					<div class="collapse navbar-collapse" id="navbarContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
 								<a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -74,16 +74,23 @@
 		<!-- Hero banner -->
 		<div class="hero" id="hero-main">
 			<div class="container">
-				<div>
-					<h1>
-						Hello, world!
-					</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-					<p>
-						Maecenas id eleifend augue.
-					</p>
+				<class="row">
+					<div class="col-md-8 mx-auto py-4">
+						<h1 class="text-center">
+							Hello, world!
+						</h1>
+						<div class="py-3">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+							<p>
+								Maecenas id eleifend augue.
+							</p>
+							<p>
+							<a href="#">Call to Action</a>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -180,20 +187,31 @@
 			<div id="main-footer-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-4 py-5">
 							<h3>
 								About
 							</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo urna, pharetra ut elit et, tincidunt accumsan ipsum. Pellentesque ac tempor purus.
+							</p>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 py-5">
 							<h3>
-								Have a Question?
+								Appointments
 							</h3>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Store Hours</a></li>
+								<li><a href="#">Location</a></li>
+								<li><a href="#">Book Appointment</a></li>
+								<li><a href="#">Pickup and Drop Off</a></li>
+							</ul>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 py-5">
 							<h3>
 								Stay Connected
 							</h3>
+							<div>Social Media Goes Here</div>
 						</div>
 					</div>
 				</div>
@@ -201,11 +219,11 @@
 			<div id="main-footer-bottom">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							Copyright
+						<div class="col-md-6 py-2">
+							Copyright 2022 All Rights Reserved
 						</div>
-						<div class="col-md-6 text-right">
-							Rental Terms and Conditions - Sitemap - Terms of Use - Privacy Policy
+						<div class="col-md-6 text-right py-2">
+							<a href="#">Rental Terms and Conditions</a> - <a href="#">Sitemap</a> - <a href="#">Terms of Use</a> - <a href="#">Privacy Policy</a>
 						</div>
 					</div>
 				</div>
