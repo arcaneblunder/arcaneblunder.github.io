@@ -1,0 +1,681 @@
+/*
+----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Brandon Swan
+#Date Created: 08/23/2022
+#Current Version: 0.0
+#Date Last Modified: 09/22/2022
+#Modified by: Brandon Swan
+#Modification log:
+
+    Version 0.0 - 08/23/2022 - Created comments for various sections.
+    Version 0.1 - 08/26/2022 - Added some basic coloring for sections.
+    Version 0.2 - 09/07/2022 - Updated navigation and hero sections. Added gradient to navigation links on mobile.
+    Version 0.3 - 09/09/2022 - Added hero to FAQ and Contact. Styled FAQ and Contact page.
+	Version 0.4 - 09/22/2022 - Created template css for tuxedos
+	Version 0.5 - 09/28/2022 - Updated background images to use image hosting
+
+ --
+------------------------------------------------------------------------------------------------------------------>
+*/
+
+body {
+	font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
+
+/*******   Mobile   *******/
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Marcellus", Garamond, Georgia, serif;
+}
+
+/* Navigation */
+
+.navbar-brand img {
+	width: 60px;
+	height: 60px;
+	margin-left: 0.5em;
+}
+.navbar-toggler {
+	margin-right: 0.5em;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999; /* Make sure nothing goes above navigation */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+
+a.btn.golden, button.btn.golden {
+	padding: 7px 12px;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #fff;
+	transition: all 0.5s ease;
+}
+a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.golden:active {
+	background-color: #d4af37;
+	border: 1px solid #eee;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.btn.black {
+	padding: 7px 12px;
+	color: #000;
+	background-color: transparent;
+	border: 1px solid #000;
+	transition: all 0.5s ease;
+}
+.btn.black:hover, .btn.black:active {
+	background-color: #333;
+	border: 1px solid #eee;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+.navbar .nav-item {
+	padding: 12px;
+	background: linear-gradient(rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 244, 244, 1) 100%);
+	border-top: 1px solid rgba(125, 125, 125, 0.3);
+	border-bottom: 1px solid rgba(125, 125, 125, 0.8);
+}
+
+/* Heros */
+
+/* add padding from navigation to top of hero */
+
+.hero {
+	background-color: #333;
+	color: #fff;
+	margin-top: 86px;
+	background-size: cover !important;
+}
+.hero-content {
+	padding: 3em 1em 1.5em 1em;
+}
+.hero h1 {
+	font-size: 2rem;
+	font-weight: 300;
+}
+.hero h1 span {
+	font-style: italic;
+	font-size: 1.75rem;
+	display: block;
+	margin-top: 12px;
+}
+.hero hr {
+	background-image: linear-gradient(90deg, #fff, #000 50%, #fff);
+	border: 0;
+	height: 1px;
+	width: 90%;
+	margin: 3.5rem auto;
+}
+
+/* Overwrite py-5 for heros on secondary pages*/
+#hero-faq .py-5, #hero-contact .py-5, #hero-rentals .py-5, #hero-tuxedos .py-5, #hero-appointment .py-5 {
+	padding: 7rem 0 !important;
+}
+
+#hero-faq {
+	background: url('https://i.postimg.cc/9FZ4NTJv/pexels-megapixelstock-17834-small.jpg') no-repeat center center;
+}
+#hero-contact {
+	background: url('https://i.postimg.cc/4N94xgct/pexels-emma-bauso-2253870-small.jpg') no-repeat center center;
+}
+#hero-rentals {
+	background: url('https://i.postimg.cc/xTwCvCQt/galina-krupoderova-pixabay-small.jpg') no-repeat center center;
+}
+#hero-tuxedos {
+	background: url('https://i.postimg.cc/WpJthgLh/pexels-pixabay-small.jpg') no-repeat center center;
+}
+#hero-appointment {
+	background: url('https://i.postimg.cc/9fZCPFNP/pexels-pixabay-265722-small.jpg') no-repeat center center;
+}
+
+/* Main */
+
+.wedding-dresses > div, .tuxedos-suits > div {
+	background-image: linear-gradient(rgba(48, 34, 24, 0.3), rgba(0, 0, 0, 0.6));
+	padding: 75px 15px;
+	height: 100%;
+	color: #fff;
+}
+
+.wedding-dresses > div {
+	border-bottom: 1px solid #ccc;
+}
+.tuxedos-suits > div {
+	border-top: 1px solid #000;
+}
+.wedding-dresses > div h3, .tuxedos-suits > div h3 {
+	color: #fff;
+	font-size: 2.5rem;
+}
+.wedding-dresses {
+	background: url('https://i.postimg.cc/mD1Z1fn0/pexels-olya-kobruseva-5429206-large.jpg') no-repeat;
+	background-size: cover;
+}
+.tuxedos-suits {
+	background: url('https://i.postimg.cc/wjYqtG5r/pexels-david-guerrero-10123124-large.jpg') no-repeat top right;
+	background-size: cover;
+}
+
+.introduction {
+	background-color: #fbfbf4;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.newsletter {
+	background: #333 url('https://i.postimg.cc/Y9d0Yz2W/drew-coffman-ll-Wjwo200fo-unsplash-mobile.jpg') no-repeat top right;
+	background-size: cover;
+	color: #fff;
+}
+.newsletter form {
+	color: #000;
+}
+
+/* Testimonials */
+
+.testimonial-body {
+	padding: 15px;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, .2) inset, 0 0 25px 1px rgba(0, 0, 0, .2) inset;
+}
+.testimonial-image {
+	display: block;
+	margin: 0 auto;
+}
+.testimonial-image img {
+	border-radius: 100px;
+	max-width: 125px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid rgba(0, 0, 0, .4);
+}
+
+/* Owl Theme Override */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #d4af37 !important;
+}
+.owl-dots {
+	margin-bottom: 24px;
+}
+.owl-nav {
+	font-size: 40px;
+	line-height: 40px;
+}
+.owl-theme .owl-nav span {
+	display: block !important;
+	padding: 0 12px 6px 12px;
+}
+.owl-theme .owl-nav span:hover {
+	background: #d4af37;
+
+}
+/* Footer */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	font-size: 0.9rem;
+}
+#main-footer-top .container .row > div {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-top: 1px solid rgba(125, 125, 125, 0.3);
+}
+#main-footer-top .container .row > div:first-child {
+	border-top-style: none;
+}
+#main-footer-top .container .row > div:last-child {
+	border-bottom-style: none;
+}
+#main-footer-bottom {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.footer-links a {
+	color: #fff;
+	display: inline-block;
+	margin: 6px 0;
+	transition: color 0.4s ease;
+}
+.footer-links a:hover {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+.legal-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0.8rem;
+}
+.legal-links a {
+	display: inline-block;
+	color: #fff;
+	margin: 6px 0;
+	transition: color 0.4s ease;
+}
+.legal-links a:hover {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+/* Forms */
+
+.form-floating {
+	z-index: 1;
+}
+.form-control.warning-red {
+	border-color: red;
+	box-shadow: 0 0 6px rgba(255, 0, 0, .7) inset;
+}
+
+/* FAQS */
+  
+#faqs {
+	margin-top: 32px;
+	padding: 24px 0;
+	font-size: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+}
+#faqs div h2 + div {
+	display: none;
+	padding: 24px;
+	background: rgba(0, 0, 0, .1);
+}
+#faqs h2  {
+	font-size: 1.25rem;
+	background-color: #eee;
+	margin: 0;
+	padding: 12px;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	border-top: 1px solid rgba(255, 255, 255, .7);
+}
+#faqs h2:before {
+	display: inline-block;
+	content: "";
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	background: url(../images/right.png);
+	background-size: cover;
+	transition: transform 400ms ease;
+}
+#faqs h2.minus:before {
+	transition: transform 400ms ease;
+	transform: rotate(90deg);
+}
+#faqs h2 a {
+	color: #212529;
+}
+
+/* Carousel Mobile*/
+
+/* Remove carousel until more jQuery / Javascript is learned 
+#testimonials-area {
+	display: none;
+}
+*/
+/* Tuxedo List */
+#tuxedo-list a {
+	display: block;
+	text-decoration: none;
+	color: #212529;
+}
+#tuxedo-list a:hover {
+	text-decoration: underline;
+}
+#tuxedo-list a:hover img {
+	transition: all 400ms ease;
+	border: 1px solid rgba(0, 0, 0, .3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+#tuxedo-list img {
+	display: block;
+	border-radius: 4px;
+	margin-bottom: .5em;
+	border: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+#tuxedo-list .title {
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-top: .75em;
+	margin-bottom: 0;
+}
+#tuxedo-list .designer {
+	margin-top: .25em;
+	margin-bottom: 0;
+}
+#tuxedo-list .price {
+	margin-top: .25em;
+	font-weight: bold;
+	font-size: .9rem;
+}
+
+/* Tuxedo Filter */
+
+#tuxedo-filter {
+	padding-top: 24px;
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	height: 100%;
+}
+#tuxedo-filter .filter-title {
+	font-weight: bold;
+	display: block;
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	padding-top: .5em;
+	margin: .5em 0;
+}
+#tuxedo-filter .tuxedo-colors {
+	overflow: hidden;
+	padding: 1px;
+}
+#tuxedo-filter .tuxedo-colors > div {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 12px;
+}
+#tuxedo-filter .tuxedo-colors > div:hover {
+	cursor: pointer;
+}
+#tuxedo-filter .tuxedo-colors .blue {
+	background-color: blue;
+}
+#tuxedo-filter .tuxedo-colors .red {
+	background-color: red;
+}
+#tuxedo-filter .tuxedo-colors .black {
+	background-color: black;
+}
+#tuxedo-filter .tuxedo-colors .grey {
+	background-color: grey;
+}
+#tuxedo-filter ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#tuxedo-filter ul a {
+	text-decoration: none;
+	color: #212529;
+	margin-top: 5px;
+	display: inline-block;
+}
+#tuxedo-filter ul a:hover {
+	text-decoration: underline;
+	color: #111;
+}
+
+
+
+
+/* Timepicker */
+ 
+/* Disable times that are disabled */
+.ui-timepicker-disabled {
+	display: none;
+}
+.ui-timepicker-list li {
+	padding: 10px 30px 10px 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.ui-timepicker-list li:nth-child(even) {
+	background-color: #eee;
+}
+
+/***** Media Queries *****/
+
+
+/* 600px */
+@media screen and (min-width: 37.5em) {
+	#hero-contact {
+		background: url('https://i.postimg.cc/QNPxDtFh/pexels-emma-bauso-2253870-medium.jpg') no-repeat top right;
+	}
+}
+
+/* Tablet Styling */
+@media screen and (min-width: 47.25em) {
+
+	/* Navigation */
+	
+	.navbar a.nav-link {
+		background-image: linear-gradient(to right, #d4af37, #d4af37 50%, #000 50%);
+		background-size: 200% 100%;
+		background-position: -100%;
+		display: inline-block;
+		padding: 5px 0;
+		position: relative;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navbar a.nav-link:before {
+		content: "";
+		background: #d4af37;
+		display: block;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 0;
+		height: 3px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navbar a.nav-link:hover {
+		background-position: 0;
+	}
+
+	.navbar a.nav-link:hover::before {
+		width: 100%;
+	}
+  
+	/* Hero */
+  
+  
+	#hero-faq {
+		background: url('https://i.postimg.cc/WpQFnS6G/pexels-megapixelstock-17834-medium.jpg') no-repeat;
+	}
+	  
+  
+	/* Dresses and Tuxedos*/
+
+	.wedding-dresses > div, .tuxedos-suits > div {
+		padding: 235px 50px 225px 50px;
+	}
+	.wedding-dresses > div {
+		border-bottom-style: none;
+	}
+	.tuxedos-suits > div {
+		border-top-style: none;
+	}
+	/* Newsletter */
+	.newsletter {
+		background: #333 url('https://i.postimg.cc/8DTvtndC/drew-coffman-ll-Wjwo200fo-unsplash-small.jpg') no-repeat top right;
+		background-size: cover;
+		color: #fff;
+	}
+
+	/* Footer */
+
+	#main-footer-top .container .row > div {
+		border-bottom-style: none;
+		border-top-style: none;
+	}
+
+	/* Legal Links in Footer */
+
+	.legal-links li {
+		float: right;
+		margin-left: 20px;
+	}
+	.legal-links li:last-child {
+		margin-right: 0;
+	}
+}
+
+/*** Desktop Styling ***/
+@media screen and (min-width: 60em) {
+	/* Navigation */
+	.sticky .container-fluid {
+		max-width: 1320px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+	.navbar-brand img {
+		width: 80px;
+		height: 80px;
+		margin-left: 0;
+	}
+		.navbar .nav-item {
+		padding: initial;
+		background: none;
+		border-top-style: none;
+		border-bottom-style: none;
+	}
+	
+	/* Hero */
+	
+	.hero {
+		margin-top: 106px;
+	}
+	.hero h1 {
+		font-size: 2.5rem;
+	}
+	.hero hr {
+		margin: 2.5rem auto;
+	}
+	.hero-content {
+		font-size: 1rem;
+		padding: 6.5% 3.5%;
+	}
+	.hero-content .img-fluid {
+		max-width: initial !important;
+		height: 100%;
+	}
+	#hero-faq {
+		background: url('https://i.postimg.cc/Sk2cMY7L/pexels-megapixelstock-17834-large.jpg') no-repeat top center;
+	}
+	#hero-contact {
+		background: url('https://i.postimg.cc/L2wnKyPL/pexels-emma-bauso-2253870-large.jpg') no-repeat center center;
+	}
+	#hero-rentals {
+		background: url("https://i.postimg.cc/xn4bjfwk/galina-krupoderova-pixabay-large.jpg") no-repeat center center;
+	}
+	#hero-tuxedos {
+		background: url('https://i.postimg.cc/nHkmJ4px/pexels-pixabay-large.jpg') no-repeat center center;
+	}
+	#hero-appointment {
+		background: url('https://i.postimg.cc/1yzX2Gq6/pexels-pixabay-265722-large.jpg') no-repeat center center;
+	}
+}
+
+/***** Desktop Styling for Wider Areas *****/
+
+@media screen and (min-width: 68.75em) {
+	/* Hero */
+
+	.hero-content {
+		font-size: 1.25rem;
+		padding: 7.5% 4.5%;
+	}
+
+	.hero hr {
+		margin: 2.75rem auto;
+	}
+	.image-container {
+		overflow: hidden;
+	}
+	.hero-content .img-fluid {
+		max-width: initial !important;
+		height: 100%;
+	}
+}
+
+@media screen and (min-width: 73.75em) {
+	#hero-main h1 {
+		font-size: 2.75rem;
+	}
+	#hero-main {
+		max-height: 640px;
+		overflow: hidden;
+	}
+	.hero-content {
+		font-size: 1.5rem;
+		padding: 6.5% 5.5% 0 5.5%;
+	}
+
+	.hero hr {
+		margin: 3.75rem auto;
+	}
+	.image-container {
+		background-color: #fbfbf4;
+	}
+		
+	.button-panel	{
+		height: 125px;
+		padding: 150px 15px;
+		float: left;
+	}
+	.button-panel img {
+		width: 30px;
+		height: 30px;
+	}
+	.button-panel img:hover {
+		cursor: pointer;
+	}
+	#display-panel {
+		height: 350px;
+		width: 1200px;
+		overflow: hidden;
+		float: left;
+	}
+	/*Testimonial-list will be the length of all divs combined. Old js style
+	#testimonial-list {
+		position: relative;   
+		width: 1800px;
+
+	}
+	#testimonial-list > div	{
+		float: left;
+		width: 300px;
+	}
+	.testimonial-container {
+		padding: 5px;
+	
+	}
+	*/
+
+
+	
+}
+
+@media screen and (min-width: 1330px) {
+		/* Old Carousel 
+	#testimonials-area {
+		display: block;
+	}
+	#carousel-testimonials-container {
+		width: 1320px;
+		margin: 0 auto;
+	}
+	*/
+}

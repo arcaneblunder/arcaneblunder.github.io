@@ -1,0 +1,22 @@
+<!-- *********************************************************************
+
+#Original Author: Brandon Swan
+#Date Created: 08/23/2022
+#Current Version: 0.0
+#Date Last Modified: 09/29/2022
+#Modified by: Brandon Swan
+#Modification log:
+
+    Version 0.0 - 08/23/2022 - Mod log and essential files and folders created. Pulled in Bootstrap 5 and jQuery.
+    Version 0.1 - 08/26/2022 - Added alert to website.
+    Version 0.2 - 09/07/2022 - Created FAQ and Contact Pages.
+	Version 0.3 - 09/09/2022 - Finished Clearforms for both Newsletter and Contact form.
+	Version 0.4 - 09/22/2022 - Added carousel to home page. Created $vanilla for vanilla javascript. Add new faq to FAQ page. Created gowns, wedding dresses, rentals, tuxedos pages, only put content in rentals and tuxeods.
+	Version 0.5 - 09/29/2022 - Created Appointment page. Added jQuery UI: datepicker and timepicker. Updated carousel on home page with OwlCarousel2. Removed old carousel. Filled empty pages with tuxedo content to create page templates
+
+ ****
+ TODO
+ 
+ Fix Hero Image to look good at all widths. - Almost
+ 
+-->
