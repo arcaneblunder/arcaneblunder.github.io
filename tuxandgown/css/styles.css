@@ -207,9 +207,6 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background: #d4af37 !important;
 }
-.owl-dots {
-	margin-bottom: 24px;
-}
 .owl-nav {
 	font-size: 40px;
 	line-height: 40px;
