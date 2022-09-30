@@ -370,8 +370,7 @@ footer {
 
 #tuxedo-filter {
 	padding-top: 24px;
-	border-right: 1px solid rgba(0, 0, 0, .2);
-	height: 100%;
+	margin-bottom: 3rem;
 }
 #tuxedo-filter .filter-title {
 	font-weight: bold;
@@ -582,6 +581,14 @@ footer {
 	}
 	#hero-appointment {
 		background: url('https://i.postimg.cc/1yzX2Gq6/pexels-pixabay-265722-large.jpg') no-repeat center center;
+	}
+	
+	/* Tuxedo Filter */
+	
+	#tuxedo-filter {
+		border-right: 1px solid rgba(0, 0, 0, .2);
+		height: 100%;
+		margin-bottom: 0;
 	}
 }
 
