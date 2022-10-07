@@ -14,6 +14,7 @@
     Version 0.3 - 09/09/2022 - Added hero to FAQ and Contact. Styled FAQ and Contact page.
 	Version 0.4 - 09/22/2022 - Created template css for tuxedos
 	Version 0.5 - 09/28/2022 - Updated background images to use image hosting
+	Version 0.5 - 10/06/2022 - Thank you heroes added
 
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -22,7 +23,6 @@
 body {
 	font-family: "Mulish", Arial, Helvetica, sans-serif;
 }
-
 
 /*******   Mobile   *******/
 
@@ -83,12 +83,12 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 
 
 .navbar .nav-item {
-	padding: 12px;
-	background: linear-gradient(rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 244, 244, 1) 100%);
+	padding: 4px 12px;
 	border-top: 1px solid rgba(125, 125, 125, 0.3);
-	border-bottom: 1px solid rgba(125, 125, 125, 0.8);
 }
-
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0, 0, 0, .7);
+}
 /* Heros */
 
 /* add padding from navigation to top of hero */
@@ -121,7 +121,7 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 }
 
 /* Overwrite py-5 for heros on secondary pages*/
-#hero-faq .py-5, #hero-contact .py-5, #hero-rentals .py-5, #hero-tuxedos .py-5, #hero-appointment .py-5 {
+#hero-faq .py-5, #hero-contact .py-5, #hero-rentals .py-5, #hero-tuxedos .py-5, #hero-appointment .py-5, #hero-wedding-dresses .py-5, #hero-suits .py-5, #hero-gowns .py-5, #hero-newsletter .py-5 {
 	padding: 7rem 0 !important;
 }
 
@@ -139,6 +139,18 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 }
 #hero-appointment {
 	background: url('https://i.postimg.cc/9fZCPFNP/pexels-pixabay-265722-small.jpg') no-repeat center center;
+}
+#hero-wedding-dresses {
+	background: url('https://i.postimg.cc/NM9NBGsG/pexels-terje-sollie-313707-small.jpg') no-repeat center center;
+}
+#hero-gowns {
+	background: url('https://i.postimg.cc/qBCkZ8dS/pexels-jill-wellington-5618793-small.jpg') no-repeat center center;
+}
+#hero-suits {
+	background: url('https://i.postimg.cc/TPwZZXBQ/pexels-pixabay-325876-small.jpg') no-repeat center center;
+}
+#hero-newsletter {
+	background: url('https://i.postimg.cc/Y9d0Yz2W/drew-coffman-ll-Wjwo200fo-unsplash-mobile.jpg') no-repeat center center;
 }
 
 /* Main */
@@ -220,11 +232,12 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 
 }
 /* Footer */
-
+/* Add padding to footer to compensate for fixed phone number on mobile.*/
 footer {
 	background-color: #333;
 	color: #fff;
 	font-size: 0.9rem;
+	padding-bottom: 38px;
 }
 #main-footer-top .container .row > div {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -330,92 +343,92 @@ footer {
 }
 */
 /* Tuxedo List */
-#tuxedo-list a {
+#product-list a {
 	display: block;
 	text-decoration: none;
 	color: #212529;
 }
-#tuxedo-list a:hover {
+#product-list a:hover {
 	text-decoration: underline;
 }
-#tuxedo-list a:hover img {
+#product-list a:hover img {
 	transition: all 400ms ease;
 	border: 1px solid rgba(0, 0, 0, .3);
 	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
-#tuxedo-list img {
+#product-list img {
 	display: block;
 	border-radius: 4px;
 	margin-bottom: .5em;
 	border: 1px solid rgba(0, 0, 0, .2);
 	box-shadow: 0 0 3px rgba(0, 0, 0, .3);
 }
-#tuxedo-list .title {
+#product-list .title {
 	font-weight: bold;
 	font-size: 1.25rem;
 	margin-top: .75em;
 	margin-bottom: 0;
 }
-#tuxedo-list .designer {
+#product-list .designer {
 	margin-top: .25em;
 	margin-bottom: 0;
 }
-#tuxedo-list .price {
+#product-list .price {
 	margin-top: .25em;
 	font-weight: bold;
 	font-size: .9rem;
 }
 
-/* Tuxedo Filter */
+/* Product Filter */
 
-#tuxedo-filter {
+#product-filter {
 	padding-top: 24px;
 	margin-bottom: 3rem;
 }
-#tuxedo-filter .filter-title {
+#product-filter .filter-title {
 	font-weight: bold;
 	display: block;
-	border-top: 1px solid rgba(0, 0, 0, .2);
-	padding-top: .5em;
-	margin: .5em 0;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	padding-top: 1em;
+	margin: 1em 0;
 }
-#tuxedo-filter .tuxedo-colors {
+#product-filter .tuxedo-colors {
 	overflow: hidden;
 	padding: 1px;
 }
-#tuxedo-filter .tuxedo-colors > div {
+#product-filter .tuxedo-colors > div {
 	width: 40px;
 	height: 40px;
 	display: inline-block;
 	margin-right: 12px;
 }
-#tuxedo-filter .tuxedo-colors > div:hover {
+#product-filter .tuxedo-colors > div:hover {
 	cursor: pointer;
 }
-#tuxedo-filter .tuxedo-colors .blue {
+#product-filter .tuxedo-colors .blue {
 	background-color: blue;
 }
-#tuxedo-filter .tuxedo-colors .red {
+#product-filter .tuxedo-colors .red {
 	background-color: red;
 }
-#tuxedo-filter .tuxedo-colors .black {
+#product-filter .tuxedo-colors .black {
 	background-color: black;
 }
-#tuxedo-filter .tuxedo-colors .grey {
+#product-filter .tuxedo-colors .grey {
 	background-color: grey;
 }
-#tuxedo-filter ul {
+#product-filter ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-#tuxedo-filter ul a {
+#product-filter ul a {
 	text-decoration: none;
 	color: #212529;
 	margin-top: 5px;
 	display: inline-block;
 }
-#tuxedo-filter ul a:hover {
+#product-filter ul a:hover {
 	text-decoration: underline;
 	color: #111;
 }
@@ -437,6 +450,45 @@ footer {
 	background-color: #eee;
 }
 
+
+/* Footer Phone Number */
+
+.phone-footer {
+	display: none;
+	margin-top: 14px;
+}
+.phone-footer img {
+	max-width: 20px;
+	height: auto;
+	width: 100%;
+	margin-right: 14px;
+}
+#phone-mobile {
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 4px 0;
+	background: rgba(0, 0, 0, .5);
+}
+#phone-mobile img {
+	max-width: 20px;
+	height: auto;
+	width: 100%;
+	margin-right: 14px;
+}
+#phone-mobile a {
+	color: #fff;
+	font-size: .8rem;
+	padding: 4px;
+	float: right;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, .5);
+}
 /***** Media Queries *****/
 
 
@@ -444,6 +496,15 @@ footer {
 @media screen and (min-width: 37.5em) {
 	#hero-contact {
 		background: url('https://i.postimg.cc/QNPxDtFh/pexels-emma-bauso-2253870-medium.jpg') no-repeat top right;
+	}
+	.phone-footer {
+		display: inline-block;
+	}
+	#phone-mobile {
+		display: none;
+	}
+	footer {
+		padding-bottom: 0;
 	}
 }
 
@@ -483,7 +544,7 @@ footer {
 	.navbar a.nav-link:hover::before {
 		width: 100%;
 	}
-  
+
 	/* Hero */
   
   
@@ -525,6 +586,9 @@ footer {
 	}
 	.legal-links li:last-child {
 		margin-right: 0;
+	}
+	.phone-mobile {
+		display: none;
 	}
 }
 
@@ -582,13 +646,36 @@ footer {
 	#hero-appointment {
 		background: url('https://i.postimg.cc/1yzX2Gq6/pexels-pixabay-265722-large.jpg') no-repeat center center;
 	}
+	#hero-wedding-dresses {
+		background: url('https://i.postimg.cc/Td4SSFdY/pexels-terje-sollie-313707-large.jpg') no-repeat center center;
+	}
+	#hero-gowns {
+		background: url('https://i.postimg.cc/rVZmHVR0/pexels-jill-wellington-5618793-large.jpg') no-repeat center center;
+	}
+	#hero-suits {
+		background: url('https://i.postimg.cc/FNS9mgJH/pexels-pixabay-325876-large.jpg') no-repeat center center;
+	}
+	#hero-newsletter {
+		background: url('https://i.postimg.cc/8DTvtndC/drew-coffman-ll-Wjwo200fo-unsplash-small.jpg') no-repeat center center;
+	}
 	
-	/* Tuxedo Filter */
+	/* Product Filter */
 	
-	#tuxedo-filter {
+	#product-filter {
 		border-right: 1px solid rgba(0, 0, 0, .2);
 		height: 100%;
 		margin-bottom: 0;
+	}
+	
+	/* Footer links */
+	
+	.footer-links {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer-links li {
+		flex-basis: 45%;
+		padding: 0 2.5%;
 	}
 }
 
@@ -668,8 +755,6 @@ footer {
 	}
 	*/
 
-
-	
 }
 
 @media screen and (min-width: 1330px) {
@@ -682,4 +767,40 @@ footer {
 		margin: 0 auto;
 	}
 	*/
+}
+
+
+/* filter controls and effects */
+.form-control.cat1, .form-control.cat2, .form-control.cat3 {
+	width: 90%;
+}
+
+.filter-cat-results .f-cat {
+  opacity: 0;
+  display: none;
+  -webkit-animation: fadeIn 0.75s ease;
+  animation: fadeIn 0.75s ease;
+}
+.filter-cat-results .f-cat.active {
+  opacity: 1;
+  display: block;
+  -webkit-animation: fadeIn 0.75s ease;
+  animation: fadeIn 0.75s ease;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
