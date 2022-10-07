@@ -13,6 +13,8 @@
 	Version 0.3 - 09/09/2022 - Finished Clearforms for both Newsletter and Contact form.
 	Version 0.4 - 09/22/2022 - Added carousel to home page. Created $vanilla for vanilla javascript. Add new faq to FAQ page. Created gowns, wedding dresses, rentals, tuxedos pages, only put content in rentals and tuxeods.
 	Version 0.5 - 09/29/2022 - Created Appointment page. Added jQuery UI: datepicker and timepicker. Updated carousel on home page with OwlCarousel2. Removed old carousel. Filled empty pages with tuxedo content to create page templates
+	Version 0.6 - 10/05/2022 - Created filter-products.js. Implemented more hero images and product images.
+	Version 0.7 - 10/06/2022 - Added meta data for all active pages. Created Thank You pages. Added helpers to forms.
 
  ****
  TODO
