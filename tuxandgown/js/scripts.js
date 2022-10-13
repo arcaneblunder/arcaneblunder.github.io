@@ -146,7 +146,7 @@ const clearContactForm = () => {
 	
 	$("#name").next().text("* Name");
 	$("#phone").next().text("* Phone");
-	$("#email").next().text("* Email");
+	$("#email").next().text("* Email Address");
 	$("#email-verify").next().text("* Verify Email");
 	
 	$("#name").focus();
