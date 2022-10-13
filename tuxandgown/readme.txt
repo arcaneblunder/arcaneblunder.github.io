@@ -95,3 +95,8 @@ suit hero images
 
 https://i.postimg.cc/CxFys8N3/pexels-pixabay-325876-large.jpg
 https://i.postimg.cc/TPwZZXBQ/pexels-pixabay-325876-small.jpg
+
+
+home page smaller images
+https://i.postimg.cc/5t2MwkFP/foto-pettine-Ifj-Ha-Io-Aoq-E-unsplash-smallest-600w.jpg
+https://i.postimg.cc/CKwmdzQD/foto-pettine-Ifj-Ha-Io-Aoq-E-unsplash-medium-972w.jpg
