@@ -15,6 +15,7 @@
 	Version 0.4 - 09/22/2022 - Created template css for tuxedos
 	Version 0.5 - 09/28/2022 - Updated background images to use image hosting
 	Version 0.5 - 10/06/2022 - Thank you heroes added
+	Version 0.6 - 10/13/2022 - Adjusted home hero image
 
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -117,7 +118,7 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 	border: 0;
 	height: 1px;
 	width: 90%;
-	margin: 3.5rem auto;
+	margin: 1.5rem auto;
 }
 
 /* Overwrite py-5 for heros on secondary pages*/
@@ -214,6 +215,14 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 	margin: 0 auto;
 	border: 1px solid rgba(0, 0, 0, .4);
 }
+
+/* Sections Backgrounds */
+
+.black-back {
+	background-color: #333;
+	color: #fff;
+}
+
 
 /* Owl Theme Override */
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -625,7 +634,7 @@ footer {
 	}
 	.hero-content {
 		font-size: 1rem;
-		padding: 6.5% 3.5%;
+		padding: 4.5% 3.5%;
 	}
 	.hero-content .img-fluid {
 		max-width: initial !important;
@@ -686,7 +695,7 @@ footer {
 
 	.hero-content {
 		font-size: 1.25rem;
-		padding: 7.5% 4.5%;
+		padding: 5.5% 4.5%;
 	}
 
 	.hero hr {
@@ -711,7 +720,7 @@ footer {
 	}
 	.hero-content {
 		font-size: 1.5rem;
-		padding: 6.5% 5.5% 0 5.5%;
+		padding: 5.5% 5.5% 0 5.5%;
 	}
 
 	.hero hr {
