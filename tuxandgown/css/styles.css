@@ -127,31 +127,31 @@ a.btn.golden:hover, button.btn.golden:hover, a.btn.golden:active, button.btn.gol
 }
 
 #hero-faq {
-	background: url('https://i.postimg.cc/9FZ4NTJv/pexels-megapixelstock-17834-small.jpg') no-repeat center center;
+	background: url('../images/pexels-megapixelstock-17834-small.jpg') no-repeat center center;
 }
 #hero-contact {
-	background: url('https://i.postimg.cc/4N94xgct/pexels-emma-bauso-2253870-small.jpg') no-repeat center center;
+	background: url('../images/pexels-emma-bauso-2253870-small.jpg') no-repeat center center;
 }
 #hero-rentals {
-	background: url('https://i.postimg.cc/xTwCvCQt/galina-krupoderova-pixabay-small.jpg') no-repeat center center;
+	background: url('../images/galina-krupoderova-pixabay-small.jpg') no-repeat center center;
 }
 #hero-tuxedos {
-	background: url('https://i.postimg.cc/WpJthgLh/pexels-pixabay-small.jpg') no-repeat center center;
+	background: url('../images/pexels-pixabay-small.jpg') no-repeat center center;
 }
 #hero-appointment {
-	background: url('https://i.postimg.cc/9fZCPFNP/pexels-pixabay-265722-small.jpg') no-repeat center center;
+	background: url('../images/pexels-pixabay-265722-small.jpg') no-repeat center center;
 }
 #hero-wedding-dresses {
-	background: url('https://i.postimg.cc/NM9NBGsG/pexels-terje-sollie-313707-small.jpg') no-repeat center center;
+	background: url('../images/pexels-terje-sollie-313707-small.jpg') no-repeat center center;
 }
 #hero-gowns {
-	background: url('https://i.postimg.cc/qBCkZ8dS/pexels-jill-wellington-5618793-small.jpg') no-repeat center center;
+	background: url('../images/pexels-jill-wellington-5618793-small.jpg') no-repeat center center;
 }
 #hero-suits {
-	background: url('https://i.postimg.cc/TPwZZXBQ/pexels-pixabay-325876-small.jpg') no-repeat center center;
+	background: url('../images/pexels-pixabay-325876-small.jpg') no-repeat center center;
 }
 #hero-newsletter {
-	background: url('https://i.postimg.cc/Y9d0Yz2W/drew-coffman-ll-Wjwo200fo-unsplash-mobile.jpg') no-repeat center center;
+	background: url('../images/drew-coffman-llWjwo200fo-unsplash-mobile.jpg') no-repeat center center;
 }
 
 /* Main */
@@ -504,7 +504,7 @@ footer {
 /* 600px */
 @media screen and (min-width: 37.5em) {
 	#hero-contact {
-		background: url('https://i.postimg.cc/QNPxDtFh/pexels-emma-bauso-2253870-medium.jpg') no-repeat top right;
+		background: url('../images/pexels-emma-bauso-2253870-medium.jpg') no-repeat top right;
 	}
 	.phone-footer {
 		display: inline-block;
@@ -558,7 +558,7 @@ footer {
   
   
 	#hero-faq {
-		background: url('https://i.postimg.cc/WpQFnS6G/pexels-megapixelstock-17834-medium.jpg') no-repeat;
+		background: url('../images/pexels-megapixelstock-17834-medium.jpg') no-repeat;
 	}
 	  
   
@@ -641,31 +641,31 @@ footer {
 		height: 100%;
 	}
 	#hero-faq {
-		background: url('https://i.postimg.cc/Sk2cMY7L/pexels-megapixelstock-17834-large.jpg') no-repeat top center;
+		background: url('../images/pexels-megapixelstock-17834-large.jpg') no-repeat top center;
 	}
 	#hero-contact {
-		background: url('https://i.postimg.cc/L2wnKyPL/pexels-emma-bauso-2253870-large.jpg') no-repeat center center;
+		background: url('../images/pexels-emma-bauso-2253870-large.jpg') no-repeat center center;
 	}
 	#hero-rentals {
-		background: url("https://i.postimg.cc/xn4bjfwk/galina-krupoderova-pixabay-large.jpg") no-repeat center center;
+		background: url('../images/galina-krupoderova-pixabay-large.jpg') no-repeat center center;
 	}
 	#hero-tuxedos {
-		background: url('https://i.postimg.cc/nHkmJ4px/pexels-pixabay-large.jpg') no-repeat center center;
+		background: url('../images/pexels-pixabay-large.jpg') no-repeat center center;
 	}
 	#hero-appointment {
-		background: url('https://i.postimg.cc/1yzX2Gq6/pexels-pixabay-265722-large.jpg') no-repeat center center;
+		background: url('../images/pexels-pixabay-265722-large.jpg') no-repeat center center;
 	}
 	#hero-wedding-dresses {
-		background: url('https://i.postimg.cc/Td4SSFdY/pexels-terje-sollie-313707-large.jpg') no-repeat center center;
+		background: url('../images/pexels-terje-sollie-313707-large.jpg') no-repeat center center;
 	}
 	#hero-gowns {
-		background: url('https://i.postimg.cc/rVZmHVR0/pexels-jill-wellington-5618793-large.jpg') no-repeat center center;
+		background: url('../images/pexels-jill-wellington-5618793-large.jpg') no-repeat center center;
 	}
 	#hero-suits {
-		background: url('https://i.postimg.cc/FNS9mgJH/pexels-pixabay-325876-large.jpg') no-repeat center center;
+		background: url('../images/pexels-pixabay-325876-large.jpg') no-repeat center center;
 	}
 	#hero-newsletter {
-		background: url('https://i.postimg.cc/8DTvtndC/drew-coffman-ll-Wjwo200fo-unsplash-small.jpg') no-repeat center center;
+		background: url('../images/drew-coffman-llWjwo200fo-unsplash-large.jpg') no-repeat center center;
 	}
 	
 	/* Product Filter */
