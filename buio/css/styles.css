@@ -1,0 +1,195 @@
+/************************************************************************
+*Original Author: Brandon Swan
+*Date Created: 11/09/2022
+*Version: 0.1
+*Date Last Modified: 11/09/2022
+*Modified by: Brandon Swan
+*Modification log: 
+
+    Version 0.0 - 11/09/2022 - Created file. Basic styling.
+    Version 0.0 - 11/11/2022 - Added parallax pictures and logo.
+
+
+    
+***
+******************************************************************** */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Colors and Fonts */
+.iris-blue {
+	color: #00adb5;
+}
+.color-white {
+	color: #fefefe;
+}
+.parisienne-font {
+	font-family: 'Parisienne', 'Brush Script MT', 'Brush Script Std', cursive;
+}
+
+/* Body */
+body {
+	position: relative;
+	font-family: 'Questrial', Arial, Helvetica, sans-serif;
+}
+
+/* Logos */
+.logo {
+	width: 100px;
+	height: auto;
+}
+.logo-large {
+	max-width: 300px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Nav */
+.navbar-custom, .footer-custom {
+	z-index: 99 !important;
+	background: linear-gradient(#333, #212529);
+}
+.nav-link {
+	position: relative;
+	transition: border .5s ease;
+	color: #00adb5;
+	border-bottom: 1px solid transparent;
+	transition: color .3s ease;
+}
+.nav-link:hover {
+	color: #00dee8;
+}
+.nav-link.active {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.sm-icons a {
+	display: inline-block;
+	transition: all .3s ease;
+}
+.sm-icons a:hover {
+	filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(307deg) brightness(203%) contrast(101%);
+}
+/* Loader
+	From : https://stackabuse.com/loading-animation-in-vanilla-javascript/
+ */
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	top: 0;
+    position: fixed;
+    background: #000;
+    z-index: 1100; /* Override nav top fixed*/
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+.loader-container-hidden {
+	display: none;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Headers */
+h1, .parallax-background h2 {
+	font-family: 'Parisienne', 'Brush Script MT', 'Brush Script Std', cursive;
+	text-shadow: 4px 4px 2px rgba(10, 10, 10, .8);
+}
+
+
+/* Parallax and Hero */
+
+.py-7e {
+	padding-top: 7em;
+	padding-bottom: 7em;
+}
+
+.hero {
+	background-image: url('../images/pexels-jorge-zapata-1398688.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 108px;
+}
+.shadow {
+	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8));
+}
+.hero .container {
+	height: 90vh;
+}
+.hero .row {
+	height: 100%;
+}
+.parallax-background {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.drinks {
+	background-image: url('../images/pexels-helena-lopes-696217.jpg');
+}
+.food {
+	background-image: url('../images/pexels-lisa-fotios-1279330.jpg');
+}
+.desserts {
+	background-image: url('../images/pexels-valeria-boltneva-7474125.jpg');
+}
+.location {
+	background-image: url('../images/pexels-adrien-olichon-3534750.jpg');
+}
+.contact {
+	background-image: url('../images/pexels-quark-studio-3201921.jpg');
+}
+
+/* For static footer */
+section.reservations {
+	padding-bottom: 6rem !important;
+}
+
+/* Footer */
+.footer-custom {
+	color: #fff;
+}
+
+/* Form */
+
+.warning-red {
+	border-color: #f00;
+}
+.error-msg {
+	float: right;
+	font-style: italic;
+	font-size: .8rem;
+	color: #f00;
+	margin-right: 1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+	.hero .container {
+		height: 100vh;
+	}
+}

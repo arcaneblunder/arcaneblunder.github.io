@@ -1,0 +1,7 @@
+Try scroll trigger.
+Fix lagging animations and scrolling
+add reservation form with date / time / party number
+Add images
+Add menus
+Link phone number
+Make footer look good
