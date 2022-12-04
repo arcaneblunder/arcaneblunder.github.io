@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 
 #hero-main {
 	background: url('../images/square-background-g6163b778f_1280-transparent.png') center center, radial-gradient(#784BA0, #3d284e);
-	background-size: 90% 10%;
+	background-size: cover;
 }
 #hero-main .lead:before {
 	display: block;
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 }
 /* Skill Set */
 
-.skill-section {
+.skill-section, .contact-area {
 	background-color: #f5f5f5;
 }
 /* Content Areas */
@@ -149,26 +149,35 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 
 
 /* Dark Mode */
-
+body.dark {
+	background-color: #543561;
+	color: rgba(255, 255, 255, .85);
+}
 body.dark .main-content, body.dark .skill-section {
 	background-color: #232b2b;
-	color: #eee;
+	color: rgba(255, 255, 255, .85);
 }
+/* 
+A68EC9
+A76AA1
+BFBED7
+C497C7
+*/
 body.dark .nav-custom {
 	background-color: #411f50;
 	background-size: 300% 300%;
 	background-image: linear-gradient(
 		-45deg, 
-		rgba(65,31,80,1) 0%, 
-		rgba(29,0,114,1) 25%, 
-		rgba(26,7,74,1) 51%, 
-		rgba(95,45,117,1) 100%
+		rgba(166,142,201) 0%, 
+		rgba(167,106,161) 25%, 
+		rgba(160,158,196) 51%, 
+		rgba(196,151,199) 100%
 	);  
 	animation: AnimateBG 20s ease infinite;
 }
 body.dark #hero-main {
 	background: url('../images/square-background-g6163b778f_1280-transparent.png') center center, radial-gradient(#3e2652, #321e42);
-	background-size: 90% 10%;
+	background-size: cover;
 }
 body.dark .projects {
 	background-color: #3e2652;

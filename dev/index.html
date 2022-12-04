@@ -30,7 +30,7 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="has-navbar-fixed-top">
+<body id="top" class="has-navbar-fixed-top">
 	<header>
 		<nav class="navbar nav-custom is-fixed-top" role="navigation" aria-label="main navigation">
 			<div class="container">
@@ -46,17 +46,17 @@
 				</div>
 				<div id="navbarBasicExample" class="navbar-menu">
 					<div class="navbar-start">
-						<a href="index.html" class="navbar-item">
+						<a href="#top" class="navbar-item">
 							<span>Home</span>
 						</a>
 
-						<a href="about.html" class="navbar-item">
+						<a href="#about" class="navbar-item">
 							<span>About</span>
 						</a>
-						<a href="portfolio.html" class="navbar-item">
+						<a href="#portfolio" class="navbar-item">
 							<span>Portfolio</span>
 						</a>
-						<a href="contact.html" class="navbar-item">
+						<a href="#contact" class="navbar-item">
 							<span>Contact</span>
 						</a>
 					</div>
@@ -80,7 +80,7 @@
 					</p>
 					<p class="subtitle is-size-4 has-text-weight-semibold has-text-white">Software Developer in Training</p>
 					<div class="columns">
-						<button type="button" onclick="themeSwap()" class="button is-link is-outlined ml-3" id="mode-swap">Click for Dark Mode</button>
+						<button type="button" class="button is-link is-outlined ml-3" id="mode-swap">Click for Dark Mode</button>
 					</div>
 				</div>
 				<div class="column py-5">
@@ -93,7 +93,7 @@
 	</section>
 	<main>
 
-			<section class="section is-medium main-content">
+			<section id="about"class="section is-medium main-content">
 				<div class="container">
 					<div class="columns">
 						<div class="column is-two-thirds">
@@ -109,6 +109,33 @@
 						</div>
 						<div class="column">
 							Stuff
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section skill-section is-clipped">
+				<div class="container" data-aos="fade-up">
+					<div class="columns">
+						<div class="column">
+					<h2>
+						My Current Skills
+					</h2>
+					</div>
+					</div>
+					<div class="skills">
+						<div class="columns is-multiline">
+							<div class="column is-two-thirds">
+								<p>
+									This is a current set of the skills I have learned compared to one another. I hope to continue to expand this list through blog articles, tutorials, and more.
+								</p>
+								<h2>Certifcations</h2>
+								<p>
+									Coming Soon
+								</p>
+							</div>
+							<div class="column is-clipped">
+								<canvas id="myChart" data-aos="fade-up-left"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -202,25 +229,53 @@
 				</div>
 			</div>
 		</section>
-		<section class="section skill-section" data-aos="fade-up">
+		<section class="section contact-area is-clipped is-medium" data-aos="fade-up">
 			<div class="container">
 				<div class="columns">
 					<div class="column">
-				<h2>
-					My Current Skills
-				</h2>
-				</div>
-				</div>
-				<div class="skills">
-					<div class="columns is-multiline">
-						<div class="column is-two-thirds">
-							<p>
-								This is a current set of the skills I have learned compared to one another. I hope to continue to expand this list through blog articles, tutorials, and more.
-							</p>
-						</div>
-						<div class="column is-clipped">
-							<canvas id="myChart" data-aos="fade-up-left"></canvas>
-						</div>
+						<h2>
+							Contact Me
+						</h2>
+						<p>
+							Looking for a new member for you team?
+						</p>
+						<p>
+							Feel free to drop a line!
+						</p>
+					</div>
+					<div class="column">
+						<h2>
+							Contact Me
+						</h2>
+						<form id="contact" method="POST" enctype="text/plain" action="mailto:brandonswan@my.cwi.edu?subject=PersonalPortfolioMail">
+							<div class="field">
+								<label for="Name" class="label">Name</label>
+								<div class="control">
+									<input class="input" type="text" name="Name" id="Name" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="field">
+								<label for="Email" class="label">Email</label> 
+								<div class="control">
+									<input type="email" class="input" name="Email" id="Email" placeholder="name@domain.com">
+								</div>
+							</div>
+							<div class="field">
+								<label for="Phone" class="label">Phone</label> 
+								<div class="control">
+									<input type="text" class="input"  name="Phone" id="Phone" placeholder="555-555-5555">
+								</div>
+							</div>
+							<div class="control">
+								<label for="Message" class="label">Message:</label>
+								<textarea id="Message" class="textarea" placeholder="Your message here..."></textarea>
+							</div>
+							<div class="control">
+								<div class="control">
+									<button class="button is-link">Submit</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -233,20 +288,9 @@
 					Logo
 				</div>
 				<div class="column">
-				  <ul class="footer-navigation">
-					<li>
-					  <a href="index.html">Home</a>
-					</li>
-					<li>
-					  <a href="about.html">About</a>
-					</li>
-					<li>
-					  <a href="portfolio.html">Portfolio</a>
-					</li>
-					<li>
-					  <a href="contact.html">Contact</a>
-					</li>
-				  </ul>
+					<p class="has-text-centered">
+						Copyright 2022.
+					</p>
 				</div>
 				  <div class="column has-text-right	">
 					<a href="https://github.com/arcaneblunder/arcaneblunder.github.io"><img src="images/github.svg" alt="Github"></a>
@@ -271,6 +315,82 @@ $(document).ready(function() {
       $(".navbar-menu").toggleClass("is-active");
 
   });
+  
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+
+			// https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+
+			
+const btn = document.querySelector("#mode-swap");
+// Select the theme preference from localStorage
+const currentTheme = localStorage.getItem("theme");
+
+// Check for localStorage. If empty, return standard text.
+if (!$("#mode-swap").text(localStorage.getItem("text"))) {
+	$("#mode-swap").text("Click for Dark Mode");
+}
+
+
+// If the current theme in localStorage is "dark"...
+if (currentTheme == "dark") {
+  // ...then use the .dark-theme class
+  document.body.classList.add("dark");
+}
+
+// Listen for a click on the button 
+btn.addEventListener("click", function() {
+	let theme = "light";
+	let text = "Click for Dark Mode";
+	$("#mode-swap").text("Click for Dark Mode")
+	
+	// Toggle the .dark-theme class on each click | Toggle text for button
+	document.body.classList.toggle("dark");
+	// Let's say the theme is equal to light
+
+	// If the body contains the .dark-theme class...
+	if (document.body.classList.contains("dark")) {
+	// ...then let's make the theme dark
+		theme = "dark";
+		text = "Click for Light Mode";
+		$("#mode-swap").text("Click for Light Mode");
+	}
+
+	// Then save the choice in localStorage
+	localStorage.setItem("theme", theme);
+	localStorage.setItem("text", text);
+	
+	if (localStorage.getItem("text", text)) {
+		$("#mode-swap").text(text);
+	}
+});
+	
+			
+
+	
+
+  
+  
 });
 	</script>
 	<script>
@@ -314,16 +434,7 @@ $(document).ready(function() {
 	</script>
      
 	<script>
-	$("#mode-swap" ).click(function() {
-		const body = document.body;
-		$(body).toggleClass("dark")
-		if ($(body).hasClass("dark")) {
-			$("#mode-swap").text("Click for Light Mode");
-		}
-		else {
-			$("#mode-swap").text("Click for Dark Mode");
-		}
-	});
+
 	</script>
 	<script>
 	/*
