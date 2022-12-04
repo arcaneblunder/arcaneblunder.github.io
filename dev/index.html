@@ -23,74 +23,82 @@
     <meta name="keywords" content="personal, portfolio, software developer, video game developer, boise, idaho">
     <meta name="author" content="Brandon Swan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Fira+Sans+Condensed:wght@400;600&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="has-navbar-fixed-top">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark nav-custom">
-		  <div class="container">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-				  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="about.html">About</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="portfolio.html">Portfolio</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="contact.html">Contact</a>
-				</li>
-			  </ul>
-			  <div class="d-flex">
-				<a href="https://github.com/arcaneblunder/arcaneblunder.github.io">GitHub</a>
-				<a href="https://codesandbox.io/u/arcaneblunder">CodeSandbox</a>
-				<a href="https://www.linkedin.com/in/brandon-swan-68b551172/">LinkedIN</a>
-			  </div>
-			</div>
-		  </div>
-		</nav>
-		<div id="hero-main">
-			<div class="container col-xxl-8 px-4 py-5">
-				<div class="row align-items-center justify-content-center g-5 py-5">
-					<div class="col-lg-6">
-						<h2 class="display-5 fw-bold lh-1 mb-3">
-							Brandon Swan <span class="subtitle">Software Developer in Training</span>
-						</h2>
-						<p class="lead">Test.</p>
-						<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-							<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-							<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-						</div>
+		<nav class="navbar nav-custom is-fixed-top" role="navigation" aria-label="main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="https://bulma.io">
+						<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+					</a>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a href="index.html" class="navbar-item">
+							<span>Home</span>
+						</a>
+
+						<a href="about.html" class="navbar-item">
+							<span>About</span>
+						</a>
+						<a href="portfolio.html" class="navbar-item">
+							<span>Portfolio</span>
+						</a>
+						<a href="contact.html" class="navbar-item">
+							<span>Contact</span>
+						</a>
 					</div>
-					<div class="col-10 col-sm-8 col-lg-6">
-						<p class="lead">
-							Hello, my name is Brandon and I'm currently in the process of earning my Software Development degree through the College of Western Idaho. My goal is to earn a career being a software developer or, if possible, in video game development. I've had a passion for video games since I first played a Nintendo back in '86. I hope to one day create a game that inspires someone else to become a developer.
-						</p>
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<a href="https://github.com/arcaneblunder/arcaneblunder.github.io" target="_blank"><img src="images/github.svg" alt="Github"></a>
+							<a href="https://www.linkedin.com/in/brandon-swan-68b551172/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+							<a href="https://codesandbox.io/u/arcaneblunder" target="_blank"><img src="images/codesandbox.svg" alt="CodeSandbox"></a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	</header>
+	<section id="hero-main" class="hero section is-medium has-text-white">
+		<div class="container">
+			<div class="columns">
+				<div class="column py-5">
+					<p class="title is-size-2 has-text-weight-semibold has-text-white">
+						Brandon Swan
+					</p>
+					<p class="subtitle is-size-4 has-text-weight-semibold has-text-white">Software Developer in Training</p>
+					<div class="columns">
+						<button type="button" onclick="themeSwap()" class="button is-link is-outlined ml-3" id="mode-swap">Click for Dark Mode</button>
+					</div>
+				</div>
+				<div class="column py-5">
+					<p>
+						Hello, my name is Brandon and I'm currently in the process of earning my Software Development degree through the College of Western Idaho. My goal is to earn a career being a software developer or, if possible, in video game development. I've had a passion for video games since I first played a Nintendo back in '86. I hope to one day create a game that inspires someone else to become a developer.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	<main>
-		<div class="pt-5">
-			<section>
+
+			<section class="section is-medium main-content">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-10 col-md-8 mx-auto" data-aos="fade-up-left">
-							<h2 class="text-center">
-								Brandon Swan <span class="subtitle fs-3">Software Developer in Training</span>
+					<div class="columns">
+						<div class="column is-two-thirds">
+							<h2 class="has-text-centered mb-3 is-size-2 has-text-weight-bold">
+								Brandon Swan
 							</h2>
 							<p>
 								Hello, my name is Brandon and I'm currently in the process of earning my Software Development degree through the College of Western Idaho. My goal is to earn a career being a software developer or, if possible, in video game development. I've had a passion for video games since I first played a Nintendo back in '86. I hope to one day create a game that inspires someone else to become a developer.
@@ -99,10 +107,12 @@
 								<a href="about.html" class="btn">Learn More</a>
 							</div>
 						</div>
+						<div class="column">
+							Stuff
+						</div>
 					</div>
 				</div>
 			</section>
-		</div>
 		<!--
 		<div class="second-area">
 			<div class="container">
@@ -147,129 +157,173 @@
 				</section>
 			</div>
 		</div>-->
-		<section id="recent-projects" data-aos="fade-up">
+  		<section class="section is-clipped projects is-medium" data-aos="fade-up">
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-4 col-md-5">
-						<p class="f2-3">Tux and Gown</p>
-						<img src="images/tux-and-gown.png" alt="Tux and Gown Screen Shot" class="img-fluid">
-						<p class="lead">My goal for this website was to create an elegant design for a business that sold and rented wedding attire.</p>
-						<p><a href="https://arcaneblunder.github.io/tuxandgown/" target="_blank">View Project</a></p>
+				<div class="columns">
+					<div class="column has-text-white">
+						<h2 class="has-text-centered is-size-1 mb-3 has-text-weight-semibold">Current Projects</h2>
+						<p class="has-text-centered">My most recent projects.</p>
 					</div>
-					<div class="col-lg-4 col-md-5">
-						<p class="f2-3">Buio Italian Restaurant</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="columns is-variable is-1-mobile is-1-tablet is-half-desktop is-5-widescreen is-2-fullhd is-multiline">
+					<div class="column">
+						<div class="p-1">
+							<div class="box">
+							<h3 class="has-text-centered is-size-4 mb-3 has-text-weight-semibold">Tux and Gown</h3>
+							<img src="images/tux-and-gown.png" alt="Tux and Gown Screen Shot" class="img-fluid">
+							<p class="lead">My goal for this website was to create an elegant design for a business that sold and rented wedding attire.</p>
+							<p class="has-text-centered mt-5">
+								<a href="https://arcaneblunder.github.io/tuxandgown/" target="_blank" class="button">View Project</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+					<div class="p-1">
+						<div class="box">
+						<h3 class="has-text-centered is-size-4 mb-3 has-text-weight-semibold">Buio Restaurant</h3>
 						<img src="images/buio.png" alt="Buio italian Restaurant Screen Shot Shot" class="img-fluid">
 						<p class="lead">This project was focused on creating a darker themed restaurant website utilizing AoS.js for animation.</p>
-						<p><a href="https://arcaneblunder.github.io/buio/" target="_blank">View Project</a></p>
+						<p class="has-text-centered mt-5"><a href="https://arcaneblunder.github.io/buio/" target="_blank" class="button">View Project</a></p>
+						</div>
+						</div>
 					</div>
-					<div class="col-lg-4 col-md-5">
-						<p class="f2-3">Pokemon Vue</p>
-						<img src="images/pokemon-vue.png" alt="Pokemon Vue Screen Shot Shot" class="img-fluid">
-						<p class="lead">Vue was created to make an application of Pokemon cards with basic information about each pokemon.</p>
-						<p><a href="https://codesandbox.io/s/pokemon-tv8q49" target="_blank">View Project</a></p>
-					</div>
-					<div class="col-12">
-						<a href="portfolio.html">View All Projects</a>
+					<div class="column">
+						<div class="p-1">
+							<div class="box">
+								<h3 class="has-text-centered is-size-4 mb-3 has-text-weight-semibold">Crimson Cavern</h3>
+								<img src="images/pokemon-vue.png" alt="Pokemon Vue Screen Shot Shot" class="img-fluid">
+								<p class="lead">Vue was created to make an application of Pokemon cards with basic information about each pokemon.</p>
+								<p class="has-text-centered mt-5"><a href="https://codesandbox.io/s/pokemon-tv8q49" target="_blank" class="button">View Project</a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="skill-set">
+		<section class="section skill-section" data-aos="fade-up">
 			<div class="container">
+				<div class="columns">
+					<div class="column">
 				<h2>
-					My Current Skillset
+					My Current Skills
 				</h2>
-				<div class="skills" data-aos="fade-up-right">
-					<div class="row">
-						<div id="beginner" class="col-lg-8">
-							<p class="fs-3">Beginner</p>
-							<ul>
-								<li>
-									PHP
-								</li>
-								<li>
-									Javascript
-								</li>
-								<li>
-									Sass
-								</li>
-								<li>
-									Less
-								</li>
-								<li>
-									jQuery
-								</li>
-								<li>
-									C#
-								</li>
-								<li>
-									Java>
-								</li>
-								<li>
-									Unity
-								</li>
-								<li>
-									Photoshop
-								</li>
-								<li>
-									Vue.js
-								</li>
-							</ul>
+				</div>
+				</div>
+				<div class="skills">
+					<div class="columns is-multiline">
+						<div class="column is-two-thirds">
+							<p>
+								This is a current set of the skills I have learned compared to one another. I hope to continue to expand this list through blog articles, tutorials, and more.
+							</p>
 						</div>
-						<div id="intermediate" class="col-lg-8">
-							<p class="fs-3">Intermediate</p>
-							<ul>
-								<li>
-									HTML5
-								</li>
-								<li>
-									CSS
-								</li>
-							</ul>
+						<div class="column is-clipped">
+							<canvas id="myChart" data-aos="fade-up-left"></canvas>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer id="footer">
+	<footer class="footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-2">
+			<div class="columns is-multiline">
+				<div class="column is-one-fifth">
 					Logo
 				</div>
-				<div class="col-md-6">
-				  <ul>
+				<div class="column">
+				  <ul class="footer-navigation">
 					<li>
 					  <a href="index.html">Home</a>
 					</li>
 					<li>
-					  <a href="index.html">Home</a>
+					  <a href="about.html">About</a>
 					</li>
 					<li>
-					  <a href="index.html">Home</a>
+					  <a href="portfolio.html">Portfolio</a>
 					</li>
 					<li>
-					  <a href="index.html">Home</a>
+					  <a href="contact.html">Contact</a>
 					</li>
 				  </ul>
 				</div>
-
-				  <div class="col-md-4">
-					<a href="https://github.com/arcaneblunder/arcaneblunder.github.io">GitHub</a>
-					<a href="https://codesandbox.io/u/arcaneblunder">CodeSandbox</a>
-					<a href="https://www.linkedin.com/in/brandon-swan-68b551172/">LinkedIN</a>
+				  <div class="column has-text-right	">
+					<a href="https://github.com/arcaneblunder/arcaneblunder.github.io"><img src="images/github.svg" alt="Github"></a>
+					<a href="https://www.linkedin.com/in/brandon-swan-68b551172/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+					<a href="https://codesandbox.io/u/arcaneblunder"><img src="images/codesandbox.svg" alt="CodeSandbox"></a>
 				  </div>
-			</div>
 		</div>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
+$(document).ready(function() {
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+});
+	</script>
+	<script>
 	  AOS.init();
+	</script>
+	<script>
+	  const ctx = document.getElementById('myChart');
+
+	  new Chart(ctx, {
+		type: 'doughnut',
+		data: {
+		  labels: ['HTML', 'CSS', 'Javascript', 'Sass', 'Vue.js', 'C#', 'PHP'],
+		  datasets: [{
+			label: 'My First Dataset',
+			data: [100, 80, 60, 50, 30, 20, 20],
+			backgroundColor: [
+			  'rgb(255, 99, 132)',
+			  'rgb(54, 162, 235)',
+			  'rgb(255, 205, 86)',
+			  'rgb(125, 125, 125)',
+			  'rgb(56, 80, 200)',
+			  'rgb(200, 56, 80)',
+			  'rgb(80, 200, 56)'
+			],
+			hoverOffset: 4
+		  }]
+		},
+		  options: {
+			responsive: true,
+			plugins: {
+			  legend: {
+				position: 'top',
+			  },
+			  title: {
+				display: true,
+				text: 'Chart.js Doughnut Chart'
+			  }
+			}
+		  },
+	  });
+	</script>
+     
+	<script>
+	$("#mode-swap" ).click(function() {
+		const body = document.body;
+		$(body).toggleClass("dark")
+		if ($(body).hasClass("dark")) {
+			$("#mode-swap").text("Click for Light Mode");
+		}
+		else {
+			$("#mode-swap").text("Click for Dark Mode");
+		}
+	});
 	</script>
 	<script>
 	/*
