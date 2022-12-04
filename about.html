@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Brandon Swan - April 14th, 2022-->
 <html lang="en">
 <head>
     <title>About Brandon Swan</title>
@@ -8,36 +7,79 @@
     <meta name="keywords" content="brandon swan, software development, software developer, boise, idaho">
     <meta name="author" content="Brandon Swan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Fira+Sans+Condensed:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/tables.css">
 </head>
 <body>
-	<header id="header-main">
-		<div class="container">
-			<a id="logo" href="index.html"><img src="images/logo.png" alt="Brandon Swan Software Developer"></a>
-			<nav id="nav-main">
-				<ul>
-					<li><a href="index.html">Home</a>
-					<li><a href="about.html" class="current">About</a>
-					<li><a href="contact.html">Contact</a>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<div id="hero-container">
-		<div class="container">
-			<div id="hero-box">
-				<div>
-					<h1 class="about">
-						About
-					</h1>
+	<header>
+<nav class="navbar nav-custom is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+        Home
+      </a>
+
+      <a href="about.html" class="navbar-item">
+        About
+      </a>
+      <a href="portfolio.html" class="navbar-item">
+        Portfolio
+      </a>
+      <a href="contact.html" class="navbar-item">
+        Contact
+      </a>
+
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+		<a href="https://github.com/arcaneblunder/arcaneblunder.github.io">GitHub</a>
+		<a href="https://codesandbox.io/u/arcaneblunder">CodeSandbox</a>
+		<a href="https://www.linkedin.com/in/brandon-swan-68b551172/">LinkedIN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+		<section id="hero-main" class="hero section is-medium">
+			<div class="container">
+				<div class="columns">
+					<div class="column">
+						<p class="title">
+							Brandon Swan <span class="subtitle">Software Developer in Training</span>
+						</p>
+						<p class="subtitle">Test.</p>
+						<div class="columns">
+							<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+							<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+						</div>
+					</div>
+					<div class="column">
+						<p>
+							Hello, my name is Brandon and I'm currently in the process of earning my Software Development degree through the College of Western Idaho. My goal is to earn a career being a software developer or, if possible, in video game development. I've had a passion for video games since I first played a Nintendo back in '86. I hope to one day create a game that inspires someone else to become a developer.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+		</section>
+	</header>
 	<main id="main">
 		<div class="container">
 			<section>
@@ -59,335 +101,7 @@
 					One of my favorite hobbies is listening to music. I find it very relaxing, and it provides a way to avoid distractions while coding. When I can, I enjoy sketching (horribly) and gaming. I love TTRPG (table-top roleplaying games) a great deal. This type of game is a great way to escape the hustle and bustle of life while also improving problem-solving abilities and communication skills. TTRPGs are also why I am enamored by video game RPGs like Divinity: Original Sin II and Breath of Fire. My goal is to create a game that can inspire someone else to pursue something they love.
 				</p>
 				<h2>
-					Education
-				</h2>
-				<p>
-					College of Western Idaho
-					<br>
-					Software Development Program
-				</p>
-				<table id="college">
-					<caption>Education Path</caption>
-					<thead>
-						<tr>
-							<th>
-								Class
-							</th>
-							<th>
-								Status
-							</th>
-							<th>
-								Instructor
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								MATH095: College Prep Mathematics
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Russel Weeks
-							</td>
-						</tr>
-						<tr>
-							<td>
-								COMM-101: Fundamentals of Oral Communication
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Margaret Sass
-							</td>
-						</tr>
-						<tr>
-							<td>
-								COMM-259: Communicating Through Web Design
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Anna Daly
-							</td>
-						</tr>
-						<tr>
-							<td>
-								ENG-100: Writing and Rhetoric Plus
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Amanda Fehrer
-							</td>
-						</tr>
-						<tr>
-							<td>
-								ENG-101P: Writing and Rhetoric 1
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Amanda Fehrer
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-120: Introduction to Programming
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Elisa Lowenstein
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-125: Intermediate Programming
-							</td>
-							<td>
-								Complete
-							</td>
-							<td>
-								Elisa Lowenstein
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-130: Intro to Web App Development
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								Elisa Lowenstein
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-135: Web Styling
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								Elisa Lowenstein
-							</td>
-						</tr>
-						<tr>
-							<td>
-								CPSC-111: Intro to Python Programming
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								Virginia N. Wokersien
-							</td>
-						</tr>
-						<tr>
-							<td>
-								MATH-143: College Algebra
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								Susan R. Aydelotte
-							</td>
-						</tr>
-						<tr>
-							<td>
-								MATH-144: Trigonometry
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-140: Intermediate Web App Develpmnt
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-143: Client-Side Frameworks
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-152: Systems Analysis and Design
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								ENGL-102: Writing and Rhetoric II
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-210: Intro Server-Side Programming
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-220: Fund of Database Systems
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-235: Advanced Web App Development
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								MATH-170: MATH-170: Calculus I
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								PSYC-140: Human Relations for Success
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-265: Mobile Development
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-271: Game Development
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-280: Collaborative Development
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								SWDV-293: Software Developmnt Internship
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								CSPC-121:  Computer Science I
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-						<tr>
-							<td>
-								CSPC-221: Computer Science II
-							</td>
-							<td>
-								In Progress
-							</td>
-							<td>
-								TBD
-							</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan="3">Total Credits Completed: 17</td>
-						</tr>
-					</tfoot>
-				</table>
-				<h2>
-					Udemy
+					Continued Learning
 				</h2>
 				<p>
 					I have a few courses on Udemy that I am working through to further my education during my free time. Here is the current list I hope to complete by the end of the year.
@@ -402,26 +116,108 @@
 	</main>
 	<footer id="footer">
 		<div class="container">
-			<div>
-				<h3>
-					Contact Info
-				</h3>
-				<p>
-					Phone: <a href="tel:+19868889902">986.888.9902</a>
-				</p>
-				<p>
-					Email: <a href="mailto:brandonswan@my.cwi.edu">brandonswan@my.cwi.edu</a>
-				</p>
-			</div>
-			<div>
-				<h3>
-					Media and Repos
-				</h3>
-				<p>
-					<a href="https://www.linkedin.com/in/brandon-swan-68b551172/" target="_blank"><img src="images/linkedin.png" alt="Brandon Swan on LinkedIn"></a> <a href="https://github.com/arcaneblunder" target="_blank"><img src="images/github.png" alt="Brandon Swan's Repo on GitHub"></a>
-				</p>
-			</div>
+				<div class="col-md-2">
+					Logo
+				</div>
+				<div class="col-md-6">
+				  <ul>
+					<li>
+					  <a href="index.html">Home</a>
+					</li>
+					<li>
+					  <a href="index.html">Home</a>
+					</li>
+					<li>
+					  <a href="index.html">Home</a>
+					</li>
+					<li>
+					  <a href="index.html">Home</a>
+					</li>
+				  </ul>
+				</div>
+
+				  <div>
+					<a href="https://github.com/arcaneblunder/arcaneblunder.github.io">GitHub</a>
+					<a href="https://codesandbox.io/u/arcaneblunder">CodeSandbox</a>
+					<a href="https://www.linkedin.com/in/brandon-swan-68b551172/">LinkedIN</a>
+				  </div>
 		</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+$(document).ready(function() {
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+});
+	</script>
+	<script>
+	  AOS.init();
+	</script>
+	<script>
+	  const ctx = document.getElementById('myChart');
+
+	  new Chart(ctx, {
+		type: 'doughnut',
+		data: {
+		  labels: ['HTML', 'CSS', 'Javascript', 'Sass', 'Vue.js', 'C#', 'PHP'],
+		  datasets: [{
+			label: 'My First Dataset',
+			data: [100, 80, 60, 50, 30, 20, 20],
+			backgroundColor: [
+			  'rgb(255, 99, 132)',
+			  'rgb(54, 162, 235)',
+			  'rgb(255, 205, 86)',
+			  'rgb(125, 125, 125)',
+			  'rgb(56, 80, 200)',
+			  'rgb(200, 56, 80)',
+			  'rgb(80, 200, 56)'
+			],
+			hoverOffset: 4
+		  }]
+		},
+		  options: {
+			responsive: true,
+			plugins: {
+			  legend: {
+				position: 'top',
+			  },
+			  title: {
+				display: true,
+				text: 'Chart.js Doughnut Chart'
+			  }
+			}
+		  },
+	  });
+	</script>
+	<script>
+	/*
+gsap.registerPlugin(ScrollTrigger);
+
+// You can use a ScrollTrigger in a tween or timeline
+gsap.to(".skills", {
+  x: 400,
+  rotation: 360,
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "top center",
+    end: "top 300px",
+    scrub: true,
+    markers: true,
+    id: "scrub"
+  }
+});*/
+
+	</script>
 </body>
 </html>

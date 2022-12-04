@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Brandon Swan</title>
+    <title>About Brandon Swan</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Contact Brandon Swan for employment or internship">
-    <meta name="keywords" content="employment, software development, internship, boise, idaho">
+    <meta name="description" content="I grew up moving all over Washington State and eventually moved in my mid-twenties. I have been living in Boise since 2007.">
+    <meta name="keywords" content="brandon swan, software development, software developer, boise, idaho">
     <meta name="author" content="Brandon Swan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Fira+Sans+Condensed:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -79,64 +80,37 @@
 			</div>
 		</section>
 	</header>
-	<div id="hero-container">
-		<div class="container mx-auto px-4">
-			<div id="hero-box">
-				<div>
-					<h1 class="contact">
-						Get in Touch
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
 	<main id="main">
 		<div class="container">
 			<section>
 				<h2>
-					Contact Me
+					Me at a Glimpse
 				</h2>
-				<form id="contact" method="POST" enctype="text/plain" action="mailto:brandonswan@my.cwi.edu?subject=PersonalPortfolioMail">
-					<div>
-						<label for="Name">Name</label> <input type="text" name="Name" id="Name" placeholder="Your Name">
-					</div>
-					<div>
-						<label for="Email">Email</label> <input type="email" name="Email" id="Email" placeholder="name@domain.com">
-					</div>
-					<div>
-						<label for="Phone">Phone</label> <input type="text" name="Phone" id="Phone" placeholder="555-555-5555">
-					</div>
-					<div>
-						<fieldset>
-							<legend>Employment Desired</legend>
-								<span><input type="radio" id="Temporary" value="Temporary" name="employment"> <label for="Temporary">Temporary</label>
-								</span>
-								<span><input type="radio" id="parttime" value="parttime" name="employment"> <label for="parttime">Part-Time</label>
-								</span>
-								<span><input type="radio" id="fulltime" value="fulltime" name="employment"> <label for="fulltime">Full-Time</label>
-								</span>
-								<span><input type="radio" id="internship" value="internship" name="employment"> <label for="internship">Internship</label>
-								</span>
-						</fieldset>
-					</div>
-					<div>
-						<label for="reference">How did you hear about me?</label>
-						<select id="reference" name="reference">
-							<option value="none" selected disabled hidden>Please Select One</option>
-							<option value="CWI">CWI</option>
-							<option value="JOb Board">Job Board</option>
-							<option value="Word of Mouth">Word of Mouth</option>
-							<option value="Application">Application</option>
-						</select>
-					</div>
-					<div>
-						<label for="Message">Message:</label>
-						<textarea id="Message" placeholder="Your message here..."></textarea>
-					</div>
-					<div>
-						<input type="submit" value="Submit">
-					</div>
-				</form>
+				<p>
+					I grew up moving all over Washington State and eventually moved in my mid-twenties. I have been living in Boise since 2007. I would describe myself as an easy-going person. My current goal is to finish my education and start a career as a software developer. 
+					I have three dogs named Kiba, Hiro, and Magnus. 
+				</p>
+				<figure class="float-right">
+					<img src="images/kiba-magnus-hiro.jpg" alt="My Three Dogs Kiba, Magnus, and Hiro">
+					<figcaption>Kiba, Mangus, and Hiro graduating dog training.</figcaption>
+				</figure>
+				<h2>
+					Hobbies and Interests
+				</h2>
+				<p>
+					One of my favorite hobbies is listening to music. I find it very relaxing, and it provides a way to avoid distractions while coding. When I can, I enjoy sketching (horribly) and gaming. I love TTRPG (table-top roleplaying games) a great deal. This type of game is a great way to escape the hustle and bustle of life while also improving problem-solving abilities and communication skills. TTRPGs are also why I am enamored by video game RPGs like Divinity: Original Sin II and Breath of Fire. My goal is to create a game that can inspire someone else to pursue something they love.
+				</p>
+				<h2>
+					Continued Learning
+				</h2>
+				<p>
+					I have a few courses on Udemy that I am working through to further my education during my free time. Here is the current list I hope to complete by the end of the year.
+				</p>
+				<ul class="udemy">
+					<li><a href="https://www.udemy.com/course/unity-metvania/" target="_blank">Learn to Create a Metroidvania Game by James Doyle</a></li>
+					<li><a href="https://www.udemy.com/course/python-for-absolute-beginners-u/" target="_blank">Python for Absolute Beginners by Green Chameleon Learning</a></li>
+					<li><a href="https://www.udemy.com/course/java-for-noobs-go-from-noob-to-semi-noob-noob-coder/" target="_blank">Java for Noobs: Go from Noob to Semi-Noob by Pedro Mercado</a></li>
+				</ul>
 			</section>
 		</div>
 	</main>
@@ -198,7 +172,7 @@ $(document).ready(function() {
 		data: {
 		  labels: ['HTML', 'CSS', 'Javascript', 'Sass', 'Vue.js', 'C#', 'PHP'],
 		  datasets: [{
-			label: 'My First Dataset',
+			label: 'My Skills',
 			data: [100, 80, 60, 50, 30, 20, 20],
 			backgroundColor: [
 			  'rgb(255, 99, 132)',
@@ -220,7 +194,7 @@ $(document).ready(function() {
 			  },
 			  title: {
 				display: true,
-				text: 'Chart.js Doughnut Chart'
+				text: 'My Skill Chart'
 			  }
 			}
 		  },
