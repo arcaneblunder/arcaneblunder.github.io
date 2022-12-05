@@ -347,7 +347,7 @@ const btn = document.querySelector("#mode-swap");
 const currentTheme = localStorage.getItem("theme");
 
 // Check for localStorage. If empty, return standard text.
-if (!$("#mode-swap").text(localStorage.getItem("text"))) {
+if (!localStorage.getItem("text")) {
 	$("#mode-swap").text("Click for Dark Mode");
 }
 
