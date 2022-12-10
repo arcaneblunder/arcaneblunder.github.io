@@ -11,6 +11,9 @@
 
     Version 0.0 - 08/31/2022 - Added mod log to index, css, javascript. Imported Bootstrap and updated code.
     Version 0.1 - 11/30/2022 - Copied from Repo. Added Tailwind.css
+    Version 0.2 - 12/03/2022 - Went to Bulma instead of Tailwind.css. Removed secondary pages put all content on index
+    Version 0.3 - 12/04/2022 - Added dark mode.
+    Version 0.4 - 12/10/2022 - Implemented scrollspy. Added more content
 
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -24,19 +27,22 @@
     <meta name="author" content="Brandon Swan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Fira+Sans+Condensed:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body id="top" class="has-navbar-fixed-top">
 	<header>
 		<nav class="navbar nav-custom is-fixed-top" role="navigation" aria-label="main navigation">
 			<div class="container">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="https://bulma.io">
-						<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+					<a class="navbar-item" href="#top">
+						<img src="images/logo.png" id="logo-image" class="Brandon Swan - Software Developer">
 					</a>
 					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 						<span aria-hidden="true"></span>
@@ -46,18 +52,17 @@
 				</div>
 				<div id="navbarBasicExample" class="navbar-menu">
 					<div class="navbar-start">
-						<a href="#top" class="navbar-item">
-							<span>Home</span>
+						<a href="#top" class="navbar-item active">
+							Home
 						</a>
-
 						<a href="#about" class="navbar-item">
-							<span>About</span>
+							About
 						</a>
 						<a href="#portfolio" class="navbar-item">
-							<span>Portfolio</span>
+							Portfolio
 						</a>
 						<a href="#contact" class="navbar-item">
-							<span>Contact</span>
+							Contact
 						</a>
 					</div>
 					<div class="navbar-end">
@@ -71,120 +76,51 @@
 			</div>
 		</nav>
 	</header>
-	<section id="hero-main" class="hero section is-medium has-text-white">
+	<section id="hero-main" class="hero section is-large has-text-white">
 		<div class="container">
 			<div class="columns">
 				<div class="column py-5">
-					<p class="title is-size-2 has-text-weight-semibold has-text-white">
+					<h2 class="title is-size-2 has-text-weight-semibold has-text-white">
 						Brandon Swan
-					</p>
-					<p class="subtitle is-size-4 has-text-weight-semibold has-text-white">Software Developer in Training</p>
-					<div class="columns">
-						<button type="button" class="button is-link is-outlined ml-3" id="mode-swap">Click for Dark Mode</button>
-					</div>
+					</h2>
+					<h3 class="subtitle is-size-4 has-text-weight-semibold has-text-white">Software Developer</h3>
+					<button type="button" class="button dark-mode-button" id="mode-swap">Click for Dark Mode</button>
 				</div>
 				<div class="column py-5">
 					<p>
-						Hello, my name is Brandon and I'm currently in the process of earning my Software Development degree through the College of Western Idaho. My goal is to earn a career being a software developer or, if possible, in video game development. I've had a passion for video games since I first played a Nintendo back in '86. I hope to one day create a game that inspires someone else to become a developer.
+						Hello, my name is Brandon. I'm currently a student at the College of Western Idaho seeking to earn my Software Development degree. My emphasis of study is front-end frameworks and creating UX/UI components. My pet project is to create my own video game from scratch.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<main>
-
-			<section id="about"class="section is-medium main-content">
-				<div class="container">
-					<div class="columns">
-						<div class="column is-two-thirds">
-							<h2 class="has-text-centered mb-3 is-size-2 has-text-weight-bold">
-								Brandon Swan
-							</h2>
-							<p>
-								Hello, my name is Brandon and I'm currently in the process of earning my Software Development degree through the College of Western Idaho. My goal is to earn a career being a software developer or, if possible, in video game development. I've had a passion for video games since I first played a Nintendo back in '86. I hope to one day create a game that inspires someone else to become a developer.
-							</p>
-							<div class="d-flex">
-								<a href="about.html" class="btn">Learn More</a>
-							</div>
-						</div>
-						<div class="column">
-							Stuff
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="section skill-section is-clipped">
-				<div class="container" data-aos="fade-up">
-					<div class="columns">
-						<div class="column">
-					<h2>
-						My Current Skills
-					</h2>
-					</div>
-					</div>
-					<div class="skills">
-						<div class="columns is-multiline">
-							<div class="column is-two-thirds">
-								<p>
-									This is a current set of the skills I have learned compared to one another. I hope to continue to expand this list through blog articles, tutorials, and more.
-								</p>
-								<h2>Certifcations</h2>
-								<p>
-									Coming Soon
-								</p>
-							</div>
-							<div class="column is-clipped">
-								<canvas id="myChart" data-aos="fade-up-left"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!--
-		<div class="second-area">
+		<section id="about" class="section is-large main-content">
 			<div class="container">
-				<section id="work-experience">
-					<h2>
-						Experience
-					</h2>
-					<div class="work-container">
-						<div>
-							<h3>
-								Web Developer for Local Firm
-							</h3>
-							<ul>
-								<li>
-									Implemented responsive web designs, provided website maintenance, installation of SSL certificates on IIS server, and provided tech support for clients with web and email issues.
-								</li>
-								<li>
-									Worked with a team to create Razor pages and implement them through Microsoft Azure.
-								</li>
-								<li>
-									Learned the basics of AGILE software development.
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h3>
-								Web Developer for BOM
-							</h3>
-							<ul>
-								<li>
-									Implemented responsive web designs from Photoshop Files, provided website maintenance, installation of SSL certificates on WHM, cPanel, and provided email support and creation.
-								</li>
-								<li>
-									Worked with designer and independently to create websites using HTML, CSS, and HTML.
-								</li>
-								<li>
-									Worked with clients to improve their website, assisted with SEO, and the creation of Google My Business profiles.
-								</li>
-							</ul>
+				<div class="columns is-multiline">
+					<div class="column is-two-thirds">
+						<h2 class="has-text-centered mb-3 is-size-2 has-text-weight-bold">
+							About Me
+						</h2>
+						<p>
+							I started coding in 2010 with my first coding job, which was adding events to a database. At the time, I didn't know much about coding. After a few days of working and online tutorials, I was able to demonstrate the basics of HTML and CSS. From there, I learned more about HTML and CSS; and just enough javascript to make myself a danger... to myself. After many years of brochure style websites, I felt it was necessary to branch out and fill in the gaps of my knowledge base and create more dynamic and interactive applications. I'm currently attending the College of Western Idaho and pursuring a degree in software development.
+						</p>
+						<h2 class="is-size-3 has-text-bold mt-5">
+							Certifications
+						</h2>
+						<p>
+							Coming soon!
+						</p>
+					</div>
+					<div class="column">
+						<div class="column is-clipped">
+							<canvas id="myChart" data-aos="fade-up-left"></canvas>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
-		</div>-->
-  		<section class="section is-clipped projects is-medium" data-aos="fade-up">
+		</section>
+  		<section id="portfolio" class="section is-clipped projects is-large">
 			<div class="container">
 				<div class="columns">
 					<div class="column has-text-white">
@@ -193,86 +129,105 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="columns is-variable is-1-mobile is-1-tablet is-half-desktop is-5-widescreen is-2-fullhd is-multiline">
-					<div class="column">
+			<div class="container" data-aos="fade-up">
+				<div class="columns is-variable is-1-mobile is-1-tablet is-multiline">
+					<div class="column is-one-third">
 						<div class="p-1">
 							<div class="box">
-							<h3 class="has-text-centered is-size-4 mb-3 has-text-weight-semibold">Tux and Gown</h3>
-							<img src="images/tux-and-gown.png" alt="Tux and Gown Screen Shot" class="img-fluid">
-							<p class="lead">My goal for this website was to create an elegant design for a business that sold and rented wedding attire.</p>
-							<p class="has-text-centered mt-5">
-								<a href="https://arcaneblunder.github.io/tuxandgown/" target="_blank" class="button">View Project</a></p>
+								<h3 class="has-text-centered is-size-5 mb-3 has-text-weight-semibold">Tux and Gown</h3>
+								<img src="images/tux-and-gown.jpg" alt="Tux and Gown Screen Shot" class="img-fluid">
+								<p class="lead">My goal for this website was to create an elegant design for a business that sold and rented wedding attire.</p>
+								<p class="has-text-centered mt-5"><a href="https://arcaneblunder.github.io/tuxandgown/" target="_blank" class="button">View Project</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="column">
-					<div class="p-1">
-						<div class="box">
-						<h3 class="has-text-centered is-size-4 mb-3 has-text-weight-semibold">Buio Restaurant</h3>
-						<img src="images/buio.png" alt="Buio italian Restaurant Screen Shot Shot" class="img-fluid">
-						<p class="lead">This project was focused on creating a darker themed restaurant website utilizing AoS.js for animation.</p>
-						<p class="has-text-centered mt-5"><a href="https://arcaneblunder.github.io/buio/" target="_blank" class="button">View Project</a></p>
-						</div>
-						</div>
-					</div>
-					<div class="column">
+					<div class="column is-one-third">
 						<div class="p-1">
 							<div class="box">
-								<h3 class="has-text-centered is-size-4 mb-3 has-text-weight-semibold">Crimson Cavern</h3>
-								<img src="images/pokemon-vue.png" alt="Pokemon Vue Screen Shot Shot" class="img-fluid">
+								<h3 class="has-text-centered is-size-5 mb-3 has-text-weight-semibold">Buio Restaurant</h3>
+								<img src="images/buio.jpg" alt="Buio italian Restaurant Screen Shot" class="img-fluid">
+								<p class="lead">This project was focused on creating a darker themed restaurant website utilizing AoS.js for animation.</p>
+								<p class="has-text-centered mt-5"><a href="https://arcaneblunder.github.io/buio/" target="_blank" class="button">View Project</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-third">
+						<div class="p-1">
+							<div class="box">
+								<h3 class="has-text-centered is-size-5 mb-3 has-text-weight-semibold">Crimson Cavern</h3>
+								<img src="images/crimson-cavern-games.jpg" alt="Crimson Cavern Games Screen Shot" class="img-fluid">
 								<p class="lead">Vue was created to make an application of Pokemon cards with basic information about each pokemon.</p>
-								<p class="has-text-centered mt-5"><a href="https://codesandbox.io/s/pokemon-tv8q49" target="_blank" class="button">View Project</a></p>
+								<p class="has-text-centered mt-5"><a href="https://nuz368.csb.app/" target="_blank" class="button">View Project</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-third">
+						<div class="p-1">
+							<div class="box">
+								<h3 class="has-text-centered is-size-5 mb-3 has-text-weight-semibold">Consultant Brand Consulting</h3>
+								<img src="images/consultant-brand-consulting.jpg" alt="Consultant Brandon Consulting" class="img-fluid">
+								<p class="lead">An introductory project into React using Bulma CSS. I was attempting a more professional design with green as the focus.</p>
+								<p class="has-text-centered mt-5"><a href="https://g5v9t0.csb.app/" target="_blank" class="button">View Project</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-third">
+						<div class="p-1">
+							<div class="box">
+								<h3 class="has-text-centered is-size-5 mb-3 has-text-weight-semibold">Tales of Fantasy</h3>
+								<img src="images/tales-of-fantasy.jpg" alt="Consultant Brandon Consulting" class="img-fluid">
+								<p class="lead">An old school RPG created following a lesson by James Doyle on Udemy.com. I added some additional text and music to the project.</p>
+								<p class="has-text-centered mt-5"><a href="https://github.com/arcaneblunder/talesoffantasy" target="_blank" class="button">View Project</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section contact-area is-clipped is-medium" data-aos="fade-up">
+		<section id="contact" class="section contact-area is-clipped is-medium">
 			<div class="container">
 				<div class="columns">
 					<div class="column">
-						<h2>
-							Contact Me
-						</h2>
-						<p>
-							Looking for a new member for you team?
-						</p>
-						<p>
-							Feel free to drop a line!
-						</p>
-					</div>
-					<div class="column">
-						<h2>
-							Contact Me
-						</h2>
-						<form id="contact" method="POST" enctype="text/plain" action="mailto:brandonswan@my.cwi.edu?subject=PersonalPortfolioMail">
+						<div class="has-text-centered">
+							<h2 class="is-size-2">
+								Contact Me
+							</h2>
+							<p>
+								Looking for a new member for you team?
+							</p>
+							<p>
+								Feel free to drop a line!
+							</p>
+						</div>
+						<form id="contact-form" method="POST" enctype="text/plain" action="mailto:arcaneblunder@gmail.com?subject=PersonalPortfolioMail" data-aos="fade-up" class="box">
 							<div class="field">
 								<label for="Name" class="label">Name</label>
 								<div class="control">
-									<input class="input" type="text" name="Name" id="Name" placeholder="Your Name">
+									<input class="input" type="text" name="Name" id="name" placeholder="Your Name">
+									<span></span>
 								</div>
 							</div>
 							<div class="field">
 								<label for="Email" class="label">Email</label> 
 								<div class="control">
-									<input type="email" class="input" name="Email" id="Email" placeholder="name@domain.com">
+									<input type="email" class="input" name="Email" id="email" placeholder="name@domain.com">
+									<span></span>
 								</div>
 							</div>
 							<div class="field">
 								<label for="Phone" class="label">Phone</label> 
 								<div class="control">
-									<input type="text" class="input"  name="Phone" id="Phone" placeholder="555-555-5555">
+									<input type="text" class="input"  name="Phone" id="phone" placeholder="555-555-5555">
+									<span></span>
 								</div>
 							</div>
 							<div class="control">
 								<label for="Message" class="label">Message:</label>
-								<textarea id="Message" class="textarea" placeholder="Your message here..."></textarea>
+								<textarea id="mesage" class="textarea" placeholder="Your message here..."></textarea>
 							</div>
 							<div class="control">
 								<div class="control">
-									<button class="button is-link">Submit</button>
+									<button class="button mt-5" id="submit">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -284,176 +239,29 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="columns is-multiline">
-				<div class="column is-one-fifth">
-					Logo
-				</div>
 				<div class="column">
-					<p class="has-text-centered">
-						Copyright 2022.
+					<p class="has-text-centered has-text-left">
+						Copyright <span id="current-year"></span> Brandon Swan
 					</p>
 				</div>
-				  <div class="column has-text-right	">
-					<a href="https://github.com/arcaneblunder/arcaneblunder.github.io"><img src="images/github.svg" alt="Github"></a>
-					<a href="https://www.linkedin.com/in/brandon-swan-68b551172/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-					<a href="https://codesandbox.io/u/arcaneblunder"><img src="images/codesandbox.svg" alt="CodeSandbox"></a>
-				  </div>
+				<div class="column has-text-right">
+					<div class="footer-links">
+						<a href="https://github.com/arcaneblunder/arcaneblunder.github.io"><img src="images/github.svg" alt="Github"></a>
+						<a href="https://www.linkedin.com/in/brandon-swan-68b551172/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+						<a href="https://codesandbox.io/u/arcaneblunder"><img src="images/codesandbox.svg" alt="CodeSandbox"></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/main.js"></script>
 	<script>
-$(document).ready(function() {
-
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
-
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-
-  });
-  
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
-
-			// https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
-
-			
-const btn = document.querySelector("#mode-swap");
-// Select the theme preference from localStorage
-const currentTheme = localStorage.getItem("theme");
-
-// Check for localStorage. If empty, return standard text.
-if (!localStorage.getItem("text")) {
-	$("#mode-swap").text("Click for Dark Mode");
-}
-
-
-// If the current theme in localStorage is "dark"...
-if (currentTheme == "dark") {
-  // ...then use the .dark-theme class
-  document.body.classList.add("dark");
-}
-
-// Listen for a click on the button 
-btn.addEventListener("click", function() {
-	let theme = "light";
-	let text = "Click for Dark Mode";
-	$("#mode-swap").text("Click for Dark Mode")
-	
-	// Toggle the .dark-theme class on each click | Toggle text for button
-	document.body.classList.toggle("dark");
-	// Let's say the theme is equal to light
-
-	// If the body contains the .dark-theme class...
-	if (document.body.classList.contains("dark")) {
-	// ...then let's make the theme dark
-		theme = "dark";
-		text = "Click for Light Mode";
-		$("#mode-swap").text("Click for Light Mode");
-	}
-
-	// Then save the choice in localStorage
-	localStorage.setItem("theme", theme);
-	localStorage.setItem("text", text);
-	
-	if (localStorage.getItem("text", text)) {
-		$("#mode-swap").text(text);
-	}
-});
-	
-			
-
-	
-
-  
-  
-});
-	</script>
-	<script>
-	  AOS.init();
-	</script>
-	<script>
-	  const ctx = document.getElementById('myChart');
-
-	  new Chart(ctx, {
-		type: 'doughnut',
-		data: {
-		  labels: ['HTML', 'CSS', 'Javascript', 'Sass', 'Vue.js', 'C#', 'PHP'],
-		  datasets: [{
-			label: 'My First Dataset',
-			data: [100, 80, 60, 50, 30, 20, 20],
-			backgroundColor: [
-			  'rgb(255, 99, 132)',
-			  'rgb(54, 162, 235)',
-			  'rgb(255, 205, 86)',
-			  'rgb(125, 125, 125)',
-			  'rgb(56, 80, 200)',
-			  'rgb(200, 56, 80)',
-			  'rgb(80, 200, 56)'
-			],
-			hoverOffset: 4
-		  }]
-		},
-		  options: {
-			responsive: true,
-			plugins: {
-			  legend: {
-				position: 'top',
-			  },
-			  title: {
-				display: true,
-				text: 'Chart.js Doughnut Chart'
-			  }
-			}
-		  },
-	  });
-	</script>
-     
-	<script>
-
-	</script>
-	<script>
-	/*
-gsap.registerPlugin(ScrollTrigger);
-
-// You can use a ScrollTrigger in a tween or timeline
-gsap.to(".skills", {
-  x: 400,
-  rotation: 360,
-  scrollTrigger: {
-    trigger: ".skills",
-    start: "top center",
-    end: "top 300px",
-    scrub: true,
-    markers: true,
-    id: "scrub"
-  }
-});*/
-
+		AOS.init();
+		let currentYear = new Date().getFullYear()  
+		$( "#current-year" ).text(currentYear);
 	</script>
 </body>
 </html>

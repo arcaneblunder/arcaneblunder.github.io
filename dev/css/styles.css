@@ -13,9 +13,9 @@
 ------------------------------------------------------------------------------------------------------------------> */
 /* Fonts */
 body {
-	font-family: 'Fira Sans Condensed', arial, Helvetica, sans-serif;
-	font-size: 1.2rem;
-	line-height: 2rem;
+	font-family: 'Open Sans', arial, Helvetica, sans-serif;
+	font-size: 1.1rem;
+	line-height: 2.5rem;
 	background-color: #23112b;
 }
 h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
@@ -50,25 +50,38 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 .navbar-end a {
 	display: block;
 }
+.navbar-menu.is-active {
+	background-color: rgba(177, 60, 159, .7);
+	height: 100vh;
+}
+.navbar-menu.is-active a.navbar-item {
+	margin: 7px 0;
+	color: rgba(255, 255, 255, .7);
+}
+.navbar-menu.is-active a.navbar-item:hover, .navbar-menu.is-active a.navbar-item:active {
+	margin: 7px 0;
+	background-color: rgba(0, 0, 0, .7);
+	color: rgba(255, 255, 255, .7);
+}
 /* Heros */
 
 #hero-main {
 	background: url('../images/square-background-g6163b778f_1280-transparent.png') center center, radial-gradient(#784BA0, #3d284e);
 	background-size: cover;
 }
-#hero-main .lead:before {
-	display: block;
-	width: 100px;
-	height: 2px;
-	background-color: #ccc;
-	content: "";
+.dark-mode-button {
+	background-color: #fafafa;
+	color: #6925A3;
+	transition: all .4s ease-in;
 }
-#hero-main .lead:after {
-	width: 100px;
-	height: 2px;
-	background-color: #ccc;
-	content: "";
-	float: right;
+.dark-mode-button:hover {
+	background-color: #e32db2;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .8);
+}
+.dark-mode-button:active {
+	background-color: #6925A3;
+	color: #fff;
 }
 
 /* Recent Projects */
@@ -120,6 +133,7 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 .footer {
 	background-color: #23112b;
 	color: #fff;
+	font-size: .8rem;
 }
 .footer-navigation {
 	margin: 0;
@@ -139,6 +153,37 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 	color: #23112b;
 	border-color: #fafafa;
 }
+
+/* Forms */
+#contact-form {
+	padding: 25px;
+	max-width: 768px;
+	background-color: #fafafa;
+	margin: 2rem auto;
+}
+.warning {
+	border-color: red;
+}
+.control span {
+	display: block;
+	margin-top: 4px;
+	font-style: italic;
+	font-size: .9rem;
+}
+.control button#submit {
+	padding: 1.5rem 3rem;
+	background-color: #b13c9c;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .7);
+	transition: background-color .4s ease-in;
+}
+.control button#submit:hover {
+	background-color: #9d2c89;
+}
+.control button#submit:active {
+	background-color: #731a63;
+}
 /* Animations */
 
 @keyframes AnimateBG { 
@@ -147,13 +192,16 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
   100%{background-position:0% 50%}
 }
 
-
 /* Dark Mode */
 body.dark {
 	background-color: #543561;
 	color: rgba(255, 255, 255, .85);
 }
-body.dark .main-content, body.dark .skill-section {
+body.dark .main-content {
+	color: rgba(255, 255, 255, .85);
+	background-color: #272225;
+}
+body.dark .skill-section {
 	background-color: #232b2b;
 	color: rgba(255, 255, 255, .85);
 }
@@ -164,34 +212,73 @@ BFBED7
 C497C7
 */
 body.dark .nav-custom {
-	background-color: #411f50;
-	background-size: 300% 300%;
-	background-image: linear-gradient(
-		-45deg, 
-		rgba(166,142,201) 0%, 
-		rgba(167,106,161) 25%, 
-		rgba(160,158,196) 51%, 
-		rgba(196,151,199) 100%
-	);  
-	animation: AnimateBG 20s ease infinite;
+	background-color: #312932;
+	background-image: none;
 }
 body.dark #hero-main {
-	background: url('../images/square-background-g6163b778f_1280-transparent.png') center center, radial-gradient(#3e2652, #321e42);
+	background: url('../images/square-background-g6163b778f_1280-transparent.png') center center, radial-gradient(#3c2d3e, #272225);
 	background-size: cover;
 }
 body.dark .projects {
-	background-color: #3e2652;
+	background-color: #34333a;
 }
 body.dark .projects .box {
-	color: #fff;
+	color: rgba(255, 255, 255, .85);
 	background-color: rgba(255, 255, 255, .15);
+}
+body.dark .contact-area {
+	background-color: #362d3e;
+	color: rgba(255, 255, 255, .85);
+}
+body.dark #contact-form.box {
+	color: rgba(255, 255, 255, .85);
+	background-color: rgba(255, 255, 255, .15);
+}
+body.dark #contact-form input[type=text], body.dark #contact-form input[type=email], body.dark #contact-form textarea {
+	background-color: rgba(255, 255, 255, .15);
+	color: rgba(255, 255, 255, .85);
+}
+/* Change placeholder colors */
+body.dark ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, .35);
+  opacity: 1; /* Firefox */
+}
+
+body.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, .35);
+}
+
+body.dark ::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255, 255, 255, .35);
 }
 body.dark .footer {
 	background-color: #111;
 }
+body.dark label {
+	color: rgba(255, 255, 255, .85);
+}
+body.dark .control button#submit {
+	background-color: #755970;
+}
+.control button#submit:hover {
+	background-color: #6b4c66;
+}
+.control button#submit:active {
+	background-color: #4a3146;
+}
 /* Desktop */
 
 @media screen and (min-width: 1024px) {
+
+	#logo-image {
+		max-height: initial;
+		max-width: 70px;
+		margin: 10px 0;
+	}
+
+	#hero-main .is-size-2 {
+		font-size: 3.5rem !important;
+	}
 
 	.navbar-start a.navbar-item.is-active, .navbar-start a.navbar-item:focus, .navbar-start a.navbar-item:focus-within, .navbar-start a.navbar-item:hover {
 		background: rgba(0, 0, 0, .50);
@@ -203,24 +290,25 @@ body.dark .footer {
 		border-top: 1px solid transparent;
 		transition: border .4s ease;
 		color: #fff;
-		padding: 20px;
+		padding: 0 40px;
 		letter-spacing: 5.5px;
-		transform: skewX(-15deg);
-		background: rgba(0, 0, 0, .25);
-		margin: 1px;
 	}
 	.navbar-start .navbar-item:first-child {
 		margin-left: 100px;
 	}
-	.navbar-start .navbar-item span {
-		transform: skewX(15deg);
-	}
-
 	.navbar-start .navbar-item:hover {
 		background: transparent;
-		border-bottom-color: #ccc;
-		border-top-color: #ccc;
-		transition: border .8s ease;
+		border-bottom-color: rgba(0, 0, 0, .45);
+		border-top-color: rgba(0, 0, 0, .65);
+		transition: all .8s ease;
+		background: rgba(0, 0, 0, .25);
+	}
+	.navbar-item.active {
+		background: rgba(0, 0, 0, .55);
+	}
+	.navbar-end a {
+		display: inline-block;
+		margin-left: 20px;
 	}
 	.footer-navigation li {
 		display: inline-block;
@@ -228,5 +316,12 @@ body.dark .footer {
 	}
 	.footer-navigation li:first-child {
 		margin-left: 0;
+	}
+	.footer-links a {
+		display: inline-block;
+		margin-left: 15px;
+	}
+	.footer-links a img {
+		opacity: .7;
 	}
 }
