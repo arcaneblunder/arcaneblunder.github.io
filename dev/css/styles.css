@@ -184,6 +184,8 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 .control button#submit:active {
 	background-color: #731a63;
 }
+
+
 /* Animations */
 
 @keyframes AnimateBG { 
@@ -260,11 +262,17 @@ body.dark label {
 body.dark .control button#submit {
 	background-color: #755970;
 }
-.control button#submit:hover {
+body.dark .control button#submit:hover {
 	background-color: #6b4c66;
 }
-.control button#submit:active {
+body.dark .control button#submit:active {
 	background-color: #4a3146;
+}
+/* Chart */
+body.dark #myChart {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #333;
 }
 /* Desktop */
 

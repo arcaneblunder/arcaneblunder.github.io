@@ -104,7 +104,14 @@ $(".navbar-burger").click(function() {
 	$(".navbar-burger").toggleClass("is-active");
 	$(".navbar-menu").toggleClass("is-active");
 
+	$(".navbar-item").click(function(event) {
+		$(".navbar-burger").removeClass("is-active");
+		$(".navbar-menu").removeClass("is-active");
+	});
+
 });
+
+
 
 // For smooth transition between sections
 $(".navbar-start a").on('click', function(event) {
@@ -229,6 +236,7 @@ new Chart(ctx, {
 		plugins: {
 			legend: {
 				position: 'top',
+				fontColor: "white",
 			},
 			title: {
 				display: true,
