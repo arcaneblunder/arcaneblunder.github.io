@@ -14,6 +14,7 @@
     Version 0.2 - 12/03/2022 - Went to Bulma instead of Tailwind.css. Removed secondary pages put all content on index
     Version 0.3 - 12/04/2022 - Added dark mode.
     Version 0.4 - 12/10/2022 - Implemented scrollspy. Added more content
+    Version 0.5 - 12/10/2022 - Expanded Footer, added dragon
 
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -97,8 +98,8 @@
 	<main>
 		<section id="about" class="section is-large main-content">
 			<div class="container">
-				<div class="columns is-multiline">
-					<div class="column is-two-thirds">
+				<div class="columns is-multiline is-tableet">
+					<div class="column is-two-thirds-tablet">
 						<h2 class="has-text-centered mb-3 is-size-2 has-text-weight-bold">
 							About Me
 						</h2>
@@ -241,15 +242,34 @@
 			<div class="columns is-multiline">
 				<div class="column">
 					<p class="has-text-centered has-text-left">
-						Copyright <span id="current-year"></span> Brandon Swan
+						<img id="footer-logo" src="images/logo.png" alt="Brandon Swan - Software Developer">
+						<strong>Brandon Swan</strong>
+						<br>
+						Software Developer passionate about building apps and games.
+					</p>
+				</div>
+				<div class="column has-text-centered">
+					<p class="is-size-5">
+						Gimme a call
+					</p>
+					<p>
+						<a href="tel:19868889902" class="button">(986) 888 9902</a>
 					</p>
 				</div>
 				<div class="column has-text-right">
+					<p class="is-size-5">
+						My Work Samples
+					</p>
 					<div class="footer-links">
 						<a href="https://github.com/arcaneblunder/arcaneblunder.github.io"><img src="images/github.svg" alt="Github"></a>
 						<a href="https://www.linkedin.com/in/brandon-swan-68b551172/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
 						<a href="https://codesandbox.io/u/arcaneblunder"><img src="images/codesandbox.svg" alt="CodeSandbox"></a>
 					</div>
+				</div>
+			</div>
+			<div class="columns footer-bottom">
+				<div class="column has-text-right">
+					&copy; <span id="current-year"></span>. Brandon Swan. All Rights Reserved
 				</div>
 			</div>
 		</div>
