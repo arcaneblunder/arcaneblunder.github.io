@@ -41,7 +41,7 @@ $("#contact-form #submit").click( evt => {
 		$("#name").addClass("warning");
 	}
 	else {
-		$("#name").next().text("* Name");
+		$("#name").next().text("");
 		$("#name").removeClass("warning");
 	}
 	$("#name").val(name);
@@ -56,7 +56,7 @@ $("#contact-form #submit").click( evt => {
 		$("#phone").addClass("warning");
 	}
 	else {
-		$("#phone").next().text("* Phone");
+		$("#phone").next().text("");
 		$("#phone").removeClass("warning");
 	}
 	$("#phone").val(phone);
@@ -85,7 +85,7 @@ $("#contact-form #submit").click( evt => {
 		isValid = false;
 	}
 	else {
-		$("#email").before().text("* Email Address");
+		$("#email").before().text("");
 		$("#email").removeClass("warning");
 	}
 	
