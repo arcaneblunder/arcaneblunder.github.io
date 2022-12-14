@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6, fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 {
 	border-top: 1px solid rgba(155, 155, 155, .7);
 }
 /* Forms */
-#contact-form {
+#contact {
 	padding: 25px;
 	max-width: 768px;
 	background-color: #fafafa;
@@ -257,11 +257,11 @@ body.dark .contact-area {
 	background-color: #362d3e;
 	color: rgba(255, 255, 255, .85);
 }
-body.dark #contact-form.box {
+body.dark #contact.box {
 	color: rgba(255, 255, 255, .85);
 	background-color: rgba(255, 255, 255, .15);
 }
-body.dark #contact-form input[type=text], body.dark #contact-form input[type=email], body.dark #contact-form textarea {
+body.dark #contact input[type=text], body.dark #contact input[type=email], body.dark #contact textarea {
 	background-color: rgba(255, 255, 255, .15);
 	color: rgba(255, 255, 255, .85);
 }
