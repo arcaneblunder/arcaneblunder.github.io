@@ -1,0 +1,16 @@
+
+#Original Author: Brandon Swan
+#Date Created: 08/31/2022
+#Current Version: 0.1
+#Date Last Modified: 08/23/2022
+#Modified by: Brandon Swan
+#Modification log:
+
+    Version 0.0 - 08/31/2022 - Added mod log to index, css, javascript. Imported Bootstrap and updated code.
+    Version 0.1 - 11/30/2022 - Copied from Repo. Added Tailwind.css
+    Version 0.2 - 12/03/2022 - Went to Bulma instead of Tailwind.css. Removed secondary pages put all content on index
+    Version 0.3 - 12/04/2022 - Added dark mode.
+    Version 0.4 - 12/10/2022 - Implemented scrollspy. Added more content
+    Version 0.5 - 12/10/2022 - Expanded Footer, added dragon
+    Version 0.6 - 12/13/2022 - Added Formspree
+	Version 1.0 - 12/13/2022 - Pushed to Github and AWS
