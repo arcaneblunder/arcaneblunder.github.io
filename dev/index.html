@@ -1,24 +1,4 @@
 <!DOCTYPE html>
-
-<!----------------------------------------------------------------------------------------------------------------
---
-#Original Author: Brandon Swan
-#Date Created: 08/31/2022
-#Current Version: 0.1
-#Date Last Modified: 08/23/2022
-#Modified by: Brandon Swan
-#Modification log:
-
-    Version 0.0 - 08/31/2022 - Added mod log to index, css, javascript. Imported Bootstrap and updated code.
-    Version 0.1 - 11/30/2022 - Copied from Repo. Added Tailwind.css
-    Version 0.2 - 12/03/2022 - Went to Bulma instead of Tailwind.css. Removed secondary pages put all content on index
-    Version 0.3 - 12/04/2022 - Added dark mode.
-    Version 0.4 - 12/10/2022 - Implemented scrollspy. Added more content
-    Version 0.5 - 12/10/2022 - Expanded Footer, added dragon
-
- --
------------------------------------------------------------------------------------------------------------------->
-
 <html lang="en">
 <head>
     <title>Brandon Swan - Software Developer In Training</title>
@@ -39,11 +19,11 @@
 </head>
 <body id="top" class="has-navbar-fixed-top">
 	<header>
-		<nav class="navbar nav-custom is-fixed-top" role="navigation" aria-label="main navigation">
+		<nav class="navbar nav-custom is-fixed-top">
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="#top">
-						<img src="images/logo.png" id="logo-image" class="Brandon Swan - Software Developer">
+						<img src="images/logo.png" id="logo-image" alt="Brandon Swan - Software Developer">
 					</a>
 					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 						<span aria-hidden="true"></span>
@@ -199,8 +179,8 @@
 							<p>
 								Feel free to drop a line!
 							</p>
-						</div>
-						<form id="contact" name="contact" method="POST" enctype="text/plain" action="https://formspree.io/f/mnqreeao" data-aos="fade-up" class="box" target="_blank">
+						</div>						
+						<form id="contact" method="POST" action="https://formspree.io/f/mnqreeao" data-aos="fade-up" class="box">
 							<div class="field">
 								<label for="name" class="label">Name</label>
 								<div class="control">
@@ -224,7 +204,7 @@
 							</div>
 							<div class="control">
 								<label for="message" class="label">Message:</label>
-								<textarea id="mesage" class="textarea" name="message" placeholder="Your message here..."></textarea>
+								<textarea id="message" class="textarea" name="message" placeholder="Your message here..."></textarea>
 							</div>
 							<div class="control">
 								<div class="control">
