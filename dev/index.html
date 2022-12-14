@@ -185,7 +185,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact" class="section contact-area is-clipped is-medium">
+		<section class="section contact-area is-clipped is-medium">
 			<div class="container">
 				<div class="columns">
 					<div class="column">
@@ -200,7 +200,7 @@
 								Feel free to drop a line!
 							</p>
 						</div>
-						<form id="contact-form" name="contact-form" method="POST" enctype="text/plain" action="https://formspree.io/f/mnqreeao" data-aos="fade-up" class="box" target="_blank">
+						<form id="contact" name="contact" method="POST" enctype="text/plain" action="https://formspree.io/f/mnqreeao" data-aos="fade-up" class="box" target="_blank">
 							<div class="field">
 								<label for="name" class="label">Name</label>
 								<div class="control">
@@ -224,11 +224,11 @@
 							</div>
 							<div class="control">
 								<label for="message" class="label">Message:</label>
-								<textarea id="mesage" class="textarea" placeholder="Your message here..."></textarea>
+								<textarea id="mesage" class="textarea" name="message" placeholder="Your message here..."></textarea>
 							</div>
 							<div class="control">
 								<div class="control">
-									<button class="button mt-5" id="submit">Submit</button>
+									<button class="button mt-5" name="submit" id="submit">Submit</button>
 								</div>
 							</div>
 						</form>
