@@ -1,0 +1,91 @@
+#top-nav {
+	background-color: #fff;
+}
+#top-nav a:hover {
+	color: #298aaa;
+	background-color: #fafafa;
+	text-decoration: underline;
+}
+.hero-home {
+	padding: 15% 10%;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url('../images/pexels-pixabay-221387.jpg');
+	background-size: cover;
+}
+.hero-about {
+	padding: 5%;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url('../images/pexels-pixabay-221387.jpg');
+	background-size: cover;
+}
+.btn-blue, .btn-orange {
+	color: #fff;
+	text-shadow: 1px 1px solid rgba(0,0,0,.3);
+	transition: background-color .3s ease;
+}
+.btn-blue {
+	background-color: #298aaa;
+}
+.btn-blue:hover {
+	background-color: #37a9cf;
+}
+.btn-orange {
+	background-color: #ff991c;
+}
+.btn-orange:hover {
+	background-color: #ffc636;
+}
+.offering {
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid rgba(125, 125, 125, .09);
+}
+.offering img {
+	border-radius: 4px;
+}
+.offering > div{
+	padding: 8px 0;
+}
+
+#home-offerings {
+	background-image: url(../images/pexels-82667735-10440469.jpg);
+	background-size: cover;
+}
+#newsletter {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(../images/pexels-kammeran-gonzalez-keola-3137381-8510339.jpg);
+	background-size: cover;
+	color: #fff;
+}
+#newsletter .text-muted {
+	color: #fff !important;
+}
+.background-blue {
+	background-color: #298aaa !important;
+}
+.background-blue h2, .background-blue .lead {
+	color: #fff;
+	text-shadow: 1px 1px rgba(0,0,0,.5);
+}
+footer {
+	background-color: #2d2d2d;
+	color: #fff;
+}
+footer a {
+	color: #fff;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+footer ul li {
+	margin-top: 5px;
+}
+footer ul a {
+	text-decoration: none;
+}
+footer ul a:hover {
+	text-decoration: underline;
+}
