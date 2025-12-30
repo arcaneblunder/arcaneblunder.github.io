@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b2735;
+    overflow: hidden;
+}
+#snowflakes-container {
+    margin-top: -10px;
+}
+#music-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100vh;
+}
+#music-player .snowflake {
+    vertical-align: top;
+}
+#song-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#song-name {
+    margin-top: 20px;
+    font-size: 2em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: white;
+}
+
+#song-artist {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#music-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#music-buttons i {
+    padding: 10px;
+}
+
+#slider-song {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 5px;
+    background: repeating-linear-gradient(45deg, red, red 12px, white 12px, white 24px);
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#slider-song::webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.fa-circle-pause {
+    color: red;
+}
+.fa-circle-play {
+    color: green;
+}
+
+.snowflake {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite; /* Apply the falling animation */
+    pointer-events: none; /* Allows clicks to pass through snowflakes to content below */
+    z-index: 1; /* Keep snowflakes in the background */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* Fall to the bottom of the viewport */
+        opacity: 0; /* Fade out as they reach the bottom */
+    }
+}
